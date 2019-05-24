@@ -714,20 +714,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Pc\\.nuget\\packages\\": {}
+    "C:\\Users\\43572072\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Pc\\Desktop\\Planim\\Planim\\Planim.iOS\\Planim.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\43572072\\Desktop\\Planim\\Planim\\Planim.iOS\\Planim.iOS.csproj",
       "projectName": "Planim.iOS",
-      "projectPath": "C:\\Users\\Pc\\Desktop\\Planim\\Planim\\Planim.iOS\\Planim.iOS.csproj",
-      "packagesPath": "C:\\Users\\Pc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Pc\\Desktop\\Planim\\Planim\\Planim.iOS\\obj\\",
+      "projectPath": "C:\\Users\\43572072\\Desktop\\Planim\\Planim\\Planim.iOS\\Planim.iOS.csproj",
+      "packagesPath": "C:\\Users\\43572072\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\43572072\\Desktop\\Planim\\Planim\\Planim.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\Pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\43572072\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -740,8 +740,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\Pc\\Desktop\\Planim\\Planim\\Planim\\Planim.csproj": {
-              "projectPath": "C:\\Users\\Pc\\Desktop\\Planim\\Planim\\Planim\\Planim.csproj"
+            "C:\\Users\\43572072\\Desktop\\Planim\\Planim\\Planim\\Planim.csproj": {
+              "projectPath": "C:\\Users\\43572072\\Desktop\\Planim\\Planim\\Planim\\Planim.csproj"
             }
           }
         }

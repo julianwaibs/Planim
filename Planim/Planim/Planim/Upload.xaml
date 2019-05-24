@@ -4,9 +4,31 @@
              x:Class="Planim.Upload">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Subir Actividad"
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand"
+                   />
+            <Editor Placeholder="Nombre de la actividad" 
+                    HorizontalOptions="Start"
+                    />
+            <Entry Placeholder="Cantidad de chicos" 
+                   Keyboard="Numeric" 
+                   HorizontalOptions="Start"
+                   />
+            <StackLayout x:Name="LayoutJuego">
+                <Label  Text="Juego 1:"/>
+                <Editor Placeholder="Titulo del juego"
+                        HorizontalOptions="Start"
+                        />
+                <Editor Placeholder="Explicacion del juego"/>
+                <Entry Placeholder="Tiempo" HorizontalOptions="Start" Keyboard="Numeric"/>
+                <Picker Title="Ambito" FontSize="20" HorizontalOptions="Start"/>
+            </StackLayout>
+            <Button 
+                    Text="Agregar Juego"
+                    HorizontalOptions="Center"
+                    AutomationId="Addjuego"/>
+            <Button Text="Subir Actividad" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

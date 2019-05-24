@@ -19,7 +19,8 @@ namespace Planim
 		}
         private async void Registro(object sender, EventArgs args)
         {
-            await Navigation.PushAsync(new Principal());   
+            await Navigation.PushAsync(new Principal());
+           
         }
 	}
 }

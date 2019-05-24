@@ -9,12 +9,16 @@ using Xamarin.Forms.Xaml;
 
 namespace Planim
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Upload : ContentPage
-	{
-		public Upload ()
-		{
-			InitializeComponent ();
-		}
-	}
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class Upload : ContentPage
+    {
+        public Upload()
+        {
+            InitializeComponent();
+        }
+     
+      
+
+
+    }
 }
