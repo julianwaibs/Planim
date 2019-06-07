@@ -4,6 +4,8 @@ C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\a
 C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\android\assets\Mono.Android.dll
 C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\android\assets\mscorlib.dll
 C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\android\assets\Planim.dll
+C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\android\assets\Rg.Plugins.Popup.dll
+C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\android\assets\Rg.Plugins.Popup.Droid.dll
 C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\android\assets\System.Core.dll
 C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\android\assets\System.dll
 C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\android\assets\System.Xml.dll
@@ -64,4 +66,5 @@ C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\a
 C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\android\assets\System.Security.SecureString.dll
 C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\android\assets\System.Web.Services.dll
 C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\android\assets\System.Xml.XPath.XDocument.dll
+C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\android\assets\System.Threading.Tasks.dll
 C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\android\assets\Mono.Security.dll

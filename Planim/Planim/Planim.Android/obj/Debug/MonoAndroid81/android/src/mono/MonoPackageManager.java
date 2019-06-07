@@ -109,6 +109,8 @@ class MonoPackageManager_Resources {
 		"Planim.Android.dll",
 		"FormsViewGroup.dll",
 		"Planim.dll",
+		"Rg.Plugins.Popup.dll",
+		"Rg.Plugins.Popup.Droid.dll",
 		"Xamarin.Android.Arch.Core.Common.dll",
 		"Xamarin.Android.Arch.Lifecycle.Common.dll",
 		"Xamarin.Android.Arch.Lifecycle.Runtime.dll",

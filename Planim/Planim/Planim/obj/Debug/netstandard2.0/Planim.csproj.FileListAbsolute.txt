@@ -44,3 +44,4 @@ C:\Users\43572072\Desktop\Planim\Planim\Planim\obj\Debug\netstandard2.0\Planim.A
 C:\Users\43572072\Desktop\Planim\Planim\Planim\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\43572072\Desktop\Planim\Planim\Planim\obj\Debug\netstandard2.0\Planim.dll
 C:\Users\43572072\Desktop\Planim\Planim\Planim\obj\Debug\netstandard2.0\Planim.pdb
+C:\Users\43572072\Desktop\Planim\Planim\Planim\obj\Debug\netstandard2.0\PopUpload.xaml.g.cs

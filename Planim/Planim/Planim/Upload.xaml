@@ -15,20 +15,13 @@
                    Keyboard="Numeric" 
                    HorizontalOptions="Start"
                    />
-            <StackLayout x:Name="LayoutJuego">
-                <Label  Text="Juego 1:"/>
-                <Editor Placeholder="Titulo del juego"
-                        HorizontalOptions="Start"
-                        />
-                <Editor Placeholder="Explicacion del juego"/>
-                <Entry Placeholder="Tiempo" HorizontalOptions="Start" Keyboard="Numeric"/>
-                <Picker Title="Ambito" FontSize="20" HorizontalOptions="Start"/>
-            </StackLayout>
             <Button 
                     Text="Agregar Juego"
                     HorizontalOptions="Center"
-                    AutomationId="Addjuego"/>
-            <Button Text="Subir Actividad" />
+                    AutomationId="Addjuego"
+                Clicked="Addjuego"/>
+            <Button Text="Subir Actividad" VerticalOptions="EndAndExpand"/>
+           
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

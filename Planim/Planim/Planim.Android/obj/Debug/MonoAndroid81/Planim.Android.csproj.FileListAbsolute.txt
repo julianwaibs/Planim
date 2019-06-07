@@ -4,6 +4,7 @@ C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\bin\Debug\com.companyname
 C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\bin\Debug\com.companyname.Planim-Signed.apk
 C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\bin\Debug\Planim.dll
 C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\bin\Debug\Planim.pdb
+C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\bin\Debug\Planim.dll.mdb
 C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\Planim.Android.csprojAssemblyReference.cache
 C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\res.flag
 C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\Planim.Android.csproj.CoreCompileInputs.cache
@@ -34,6 +35,7 @@ C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\u
 C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\bin\Debug\FormsViewGroup.pdb
 C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\bin\Debug\Mono.Android.pdb
 C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\bin\Debug\mscorlib.pdb
+C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\bin\Debug\Rg.Plugins.Popup.pdb
 C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\bin\Debug\System.Core.pdb
 C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\bin\Debug\System.pdb
 C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\bin\Debug\System.Xml.pdb
@@ -56,6 +58,7 @@ C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\l
 C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\linksrc\FormsViewGroup.pdb
 C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\linksrc\Mono.Android.pdb
 C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\linksrc\mscorlib.pdb
+C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\linksrc\Rg.Plugins.Popup.pdb
 C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\linksrc\System.Core.pdb
 C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\linksrc\System.pdb
 C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\linksrc\System.Xml.pdb
@@ -74,14 +77,17 @@ C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\l
 C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\linksrc\System.IO.Compression.FileSystem.pdb
 C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\linksrc\System.Web.Services.pdb
 C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\linksrc\Mono.Security.pdb
-C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\bin\Debug\Planim.dll.mdb
+C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\bin\Debug\Rg.Plugins.Popup.Droid.dll.mdb
 C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\linksrc\Planim.dll.mdb
+C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\linksrc\Rg.Plugins.Popup.Droid.dll.mdb
 C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\android\assets\Planim.dll.mdb
+C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\android\assets\Rg.Plugins.Popup.Droid.dll.mdb
 C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\android\assets\FormsViewGroup.pdb
 C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\android\assets\Mono.Android.pdb
 C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\android\assets\Mono.Security.pdb
 C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\android\assets\mscorlib.pdb
 C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\android\assets\Planim.Android.pdb
+C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\android\assets\Rg.Plugins.Popup.pdb
 C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\android\assets\System.ComponentModel.Composition.pdb
 C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\android\assets\System.Core.pdb
 C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\android\assets\System.Data.pdb
@@ -99,7 +105,6 @@ C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\a
 C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\android\assets\Xamarin.Forms.Core.pdb
 C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\android\assets\Xamarin.Forms.Platform.Android.pdb
 C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\android\assets\Xamarin.Forms.Xaml.pdb
-C:\Users\43572072\Desktop\Planim\Planim\Planim\bin\Debug\netstandard2.0\Planim.dll
 C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\linksrc\Planim.Android.pdb
-C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\bin\Debug\Planim.dll.mdb
 C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\linksrc\Planim.dll.mdb
+C:\Users\43572072\Desktop\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\linksrc\Rg.Plugins.Popup.Droid.dll.mdb
