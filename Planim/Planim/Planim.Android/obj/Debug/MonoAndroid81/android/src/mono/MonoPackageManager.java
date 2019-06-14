@@ -108,9 +108,12 @@ class MonoPackageManager_Resources {
 		/* We need to ensure that "Planim.Android.dll" comes first in this list. */
 		"Planim.Android.dll",
 		"FormsViewGroup.dll",
+		"Newtonsoft.Json.dll",
 		"Planim.dll",
 		"Rg.Plugins.Popup.dll",
 		"Rg.Plugins.Popup.Droid.dll",
+		"System.Net.Http.Extensions.dll",
+		"System.Net.Http.Primitives.dll",
 		"Xamarin.Android.Arch.Core.Common.dll",
 		"Xamarin.Android.Arch.Lifecycle.Common.dll",
 		"Xamarin.Android.Arch.Lifecycle.Runtime.dll",

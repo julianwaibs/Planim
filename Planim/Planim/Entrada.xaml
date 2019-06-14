@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Planim"
+             x:Class="Planim.Entrada">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Label Text="Bienvenido a Planim!" 
+           HorizontalOptions="Center"
+           VerticalOptions="Center" 
+            FontSize="30" 
+               TextColor="SkyBlue"/>
+        <Image Source="bruna.png"
+               WidthRequest="300"
+               HeightRequest="300" />
+        <Button  Text="Iniciar sesion"
+                VerticalOptions="End"
+                HorizontalOptions="Center"
+                Clicked="IniciarSesion"/>
+        <Button  Text="Registrarse"
+                VerticalOptions="End"
+                HorizontalOptions="Center"
+                Clicked="Registrarse"/>
+    </StackLayout>
+
+</ContentPage>
