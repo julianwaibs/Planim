@@ -1281,11 +1281,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\43572072\\Desktop\\Planim\\Planim\\Planim.iOS\\Planim.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\43572072\\Documents\\GitHub\\Planim\\Planim\\Planim\\Planim.iOS\\Planim.iOS.csproj",
       "projectName": "Planim.iOS",
-      "projectPath": "C:\\Users\\43572072\\Desktop\\Planim\\Planim\\Planim.iOS\\Planim.iOS.csproj",
+      "projectPath": "C:\\Users\\43572072\\Documents\\GitHub\\Planim\\Planim\\Planim\\Planim.iOS\\Planim.iOS.csproj",
       "packagesPath": "C:\\Users\\43572072\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\43572072\\Desktop\\Planim\\Planim\\Planim.iOS\\obj\\",
+      "outputPath": "C:\\Users\\43572072\\Documents\\GitHub\\Planim\\Planim\\Planim\\Planim.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -1302,8 +1302,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\43572072\\Desktop\\Planim\\Planim\\Planim\\Planim.csproj": {
-              "projectPath": "C:\\Users\\43572072\\Desktop\\Planim\\Planim\\Planim\\Planim.csproj"
+            "C:\\Users\\43572072\\Documents\\GitHub\\Planim\\Planim\\Planim\\Planim\\Planim.csproj": {
+              "projectPath": "C:\\Users\\43572072\\Documents\\GitHub\\Planim\\Planim\\Planim\\Planim\\Planim.csproj"
             }
           }
         }

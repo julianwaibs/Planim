@@ -16,22 +16,39 @@ namespace Planim
 		public Registrar ()
 		{
 			InitializeComponent ();
-            LlenarInstituciones();
+            try
+            {
+                LlenarInstituciones();
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debugger.Break();
+
+            }
 		}
         private async void Registro(object sender, EventArgs args)
         {
             await Navigation.PushAsync(new Principal());
         }
-        private async void LlenarInstituciones()
+        public async void LlenarInstituciones()
         {
             Instituciones instituciones = new Instituciones();
-            IList<Instituciones> inst;
+            IList<Instituciones> inst = new List<Instituciones>();
             HttpClient cliente = new HttpClient();
-            string url = "http://10.152.2.25:59449/api/instituciones";
-            var resultado = await cliente.GetAsync(url);
-            var json = resultado.Content.ReadAsStringAsync().Result;
-            inst = Instituciones.FromJson(json);
-            listaInstitucion.ItemsSource = instituciones.Instituciones1;
+            string url = "http://10.152.2.39:59449/api/instituciones";
+           
+                //var resultado = await cliente.GetAsync(url);
+                var resultado = await cliente.GetAsync(url);
+                var json = resultado.Content.ReadAsStringAsync().Result;
+                inst = Instituciones.FromJson(json);
+            int i = 0;
+            List<String> List = new List<string>();
+             foreach (Instituciones institu in inst)
+              { 
+                  List.Add(inst[i].Instituciones1.ToString());
+                  i++;
+              }
+            Pickinstitucion.ItemsSource = List;
         }
-	}
+    }
 }

@@ -736,11 +736,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\43572072\\Desktop\\Planim\\Planim\\Planim\\Planim.csproj",
+      "projectUniqueName": "C:\\Users\\43572072\\Documents\\GitHub\\Planim\\Planim\\Planim\\Planim\\Planim.csproj",
       "projectName": "Planim",
-      "projectPath": "C:\\Users\\43572072\\Desktop\\Planim\\Planim\\Planim\\Planim.csproj",
+      "projectPath": "C:\\Users\\43572072\\Documents\\GitHub\\Planim\\Planim\\Planim\\Planim\\Planim.csproj",
       "packagesPath": "C:\\Users\\43572072\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\43572072\\Desktop\\Planim\\Planim\\Planim\\obj\\",
+      "outputPath": "C:\\Users\\43572072\\Documents\\GitHub\\Planim\\Planim\\Planim\\Planim\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
