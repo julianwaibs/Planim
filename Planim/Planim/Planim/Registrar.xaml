@@ -12,10 +12,6 @@
              Placeholder="Nombre"
               AutomationId="NombreMadrij"  
                />
-            <Editor
-             Placeholder="Apellido"
-              AutomationId="ApellidoMadrij"  
-               />
             <Editor 
                 Placeholder="Mail"
                 AutomationId="MailMadrij"
@@ -31,9 +27,18 @@
                 AutomationId="ConfirContraseña"
                 />
             <Picker Title="Institucion" 
-                   x:Name="Pickinstitucion"
-          
+                    TextColor="Black"
+                    
                  />
+            <ListView x:Name="listaInstitucion">
+              <ListView.ItemTemplate>
+                <DataTemplate>
+                        <ViewCell>
+                            <Label Text="{Binding Instituciones1}"></Label>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
 
             <Button
                 Text="Registrarse"

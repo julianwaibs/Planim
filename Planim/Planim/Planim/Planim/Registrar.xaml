@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Planim.Registrar">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Registrarse:"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start"
+                   Font="20"/>
+            <Editor
+             Placeholder="Nombre"
+              x:Name="NombreMadrij"  
+               />
+            <Editor
+             Placeholder="Apellido"
+              x:Name="ApellidoMadrij"  
+               />
+            <Editor 
+                Placeholder="Mail"
+                x:Name="MailMadrij"
+                
+                />
+            <Entry
+                Placeholder="Contraseña"
+                IsPassword="True"
+                x:Name="ContraseñaMadrij"
+                />
+            <Entry
+                Placeholder="Confirmar Contraseña"
+                IsPassword="True"
+                x:Name="ConfirContraseña"
+                />
+            <Picker Title="Institucion" 
+                   x:Name="Pickinstitucion"
+            
+                 />
+
+            <Button
+                Text="Registrarse"
+                Clicked="Registro"
+                />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
