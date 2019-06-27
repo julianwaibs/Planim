@@ -10,35 +10,31 @@
                    Font="20"/>
             <Editor
              Placeholder="Nombre"
-              AutomationId="NombreMadrij"  
+              x:Name="NombreMadrij"  
+               />
+            <Editor
+             Placeholder="Apellido"
+              x:Name="ApellidoMadrij"  
                />
             <Editor 
                 Placeholder="Mail"
-                AutomationId="MailMadrij"
+                x:Name="MailMadrij"
+                
                 />
             <Entry
                 Placeholder="Contraseña"
                 IsPassword="True"
-                AutomationId="ContraseñaMadrij"
+                x:Name="ContraseñaMadrij"
                 />
             <Entry
                 Placeholder="Confirmar Contraseña"
                 IsPassword="True"
-                AutomationId="ConfirContraseña"
+                x:Name="ConfirContraseña"
                 />
             <Picker Title="Institucion" 
-                    TextColor="Black"
-                    
+                   x:Name="Pickinstitucion"
+            
                  />
-            <ListView x:Name="listaInstitucion">
-              <ListView.ItemTemplate>
-                <DataTemplate>
-                        <ViewCell>
-                            <Label Text="{Binding Instituciones1}"></Label>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
 
             <Button
                 Text="Registrarse"
