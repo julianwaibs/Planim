@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Planim.Juego">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Seleccione un juego"
+                VerticalOptions="Start" 
+                HorizontalOptions="Center" />
+            <ListView x:Name="ListaJuegos"
+                      SelectedItem="JuegoSeleccion">
+                <ListView.ItemsSource/>
+                
+            </ListView>
+            <Button Text="Agregar Juego nuevo"
+                    Clicked="AddJuego"/>
+            <Button Text="Agregar a mi Actividad "
+                    Clicked="MiJuego"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

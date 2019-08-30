@@ -16,7 +16,7 @@ namespace Planim
 		{
 			InitializeComponent ();
 		}
-       
+        List<string> aa = new List<string>();
         private async void Subir(object sender, EventArgs args)
         {
             await Navigation.PushAsync(new Upload());

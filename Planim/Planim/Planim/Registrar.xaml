@@ -31,10 +31,8 @@
                 x:Name="ConfirContraseña"
                 />
             <Picker Title="Institucion" 
-                    x:Name="Pickinstitucion"
-                 
+                    x:Name="Pickinstitucion"                
                  />
-
             <Button
                 Text="Registrarse"
                 Clicked="Registro"

@@ -63,3 +63,5 @@ C:\Users\43572072\Desktop\Planim\Planim\Planim\Planim\bin\Debug\netstandard2.0\P
 C:\Users\43572072\Desktop\Planim\Planim\Planim\Planim\bin\Debug\netstandard2.0\Planim.dll
 C:\Users\43572072\Desktop\Planim\Planim\Planim\Planim\bin\Debug\netstandard2.0\Planim.pdb
 C:\Users\43572072\Desktop\Planim\Planim\Planim\Planim\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\43572072\Desktop\Planim\Planim\Planim\Planim\obj\Debug\netstandard2.0\AgregarJuego.xaml.g.cs
+C:\Users\43572072\Desktop\Planim\Planim\Planim\Planim\obj\Debug\netstandard2.0\Juego.xaml.g.cs

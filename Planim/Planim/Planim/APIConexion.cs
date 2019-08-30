@@ -20,7 +20,7 @@ namespace Planim
 
             using (HttpClient client = new HttpClient())
             {
-                strBaseAdressURL = "http://10.152.2.25:59449/";
+                strBaseAdressURL = "http://10.152.2.31:59449/";
                 client.BaseAddress = new Uri(strBaseAdressURL);
 
                 // Add an Accept header for JSON format.
@@ -36,8 +36,34 @@ namespace Planim
 
             return returnList;
         }
+
+
+        public List<ClaseJuego> GetJuegos()
+        {
+            List<ClaseJuego> returnList = new List<ClaseJuego>();
+            string strBaseAdressURL;
+            HttpResponseMessage response;
+
+            using (HttpClient client = new HttpClient())
+            {
+                strBaseAdressURL = "http://10.152.2.31:59449/";
+                client.BaseAddress = new Uri(strBaseAdressURL);
+
+                // Add an Accept header for JSON format.
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+                response = client.GetAsync("api/Juegos").Result;
+                if (response.IsSuccessStatusCode)
+                {
+                    returnList = response.Content.ReadAsAsync<List<ClaseJuego>>().Result;
+                }
+                //client.Dispose();
+            }
+
+            return returnList;
+        }
         //Cargar Madrijim
-        public Madrijim Insert(Madrijim newEntity) {
+        public Madrijim InsertMadrij(Madrijim newEntity) {
             Madrijim            returnEntity = null;
             string              strBaseAdressURL;
             ByteArrayContent    byteContent;

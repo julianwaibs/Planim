@@ -59,6 +59,9 @@ namespace Planim.Droid
 			// aapt resource value: 0x7F010002
 			public const int bruna = 2130771970;
 			
+			// aapt resource value: 0x7F010003
+			public const int menu = 2130771971;
+			
 			static Drawable()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
