@@ -12,7 +12,7 @@ namespace Planim
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Juego : ContentPage
 	{
-        List<string> JuegoSele = new List<string>();
+        List<ClaseJuego> JuegoSele = new List<ClaseJuego>();
 		public Juego ()
 		{
 			InitializeComponent ();
@@ -25,9 +25,6 @@ namespace Planim
             List<ClaseJuego> ListaJuego = new List<ClaseJuego>();
             APIConexion aPI = new APIConexion();
             ListaJuego = aPI.GetJuegos();
-
-            /*Juegos.Add("Juego1");
-            Juegos.Add("Juego2");*/
             ListaJuegos.ItemsSource = ListaJuego;
         }
 
@@ -35,12 +32,13 @@ namespace Planim
         {
             await Navigation.PushAsync(new AgregarJuego());
         }
-        private void MiJuego(object sender, EventArgs args)
+       public void JuegoSeleccion(object sender, SelectedItemChangedEventArgs e)
         {
-            string JuegoSeles = ListaJuegos.SelectedItem.ToString();
-            //Upload upload = new Upload();
-            // upload.JuegosSeleccionados(JuegoSeles); 
-            JuegoSele.Add(JuegoSeles);
+            var clase= e.SelectedItem as ClaseJuego;
+         
+        }
+        private void MiJuego(object sender, EventArgs args)
+        {    
             Navigation.PushAsync(new Upload(JuegoSele));
         }
 

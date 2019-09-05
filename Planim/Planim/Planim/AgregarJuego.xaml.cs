@@ -27,7 +27,7 @@ namespace Planim
         private void Juegonuevo(object sender, EventArgs e)
         {
             CrearJuego();
-             Navigation.PushAsync(new Upload(juegonuevo));
+             Navigation.PushAsync(new Upload());
         }
     }
 }

@@ -14,13 +14,14 @@ namespace Planim
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Upload : ContentPage
     {
-        List<string> eljue=new List<string>();
-            public Upload()
-        { InitializeComponent(); }
-            public Upload(List<string> Juegito)
+        List<ClaseJuego> eljue=new List<ClaseJuego>();
+
+            public Upload(){ InitializeComponent(); }
+
+            public Upload(List<ClaseJuego> Juegito)
         { 
             InitializeComponent();
-            eljue.Add(Juegito[0]);
+            eljue=Juegito;
             JuegosSeleccionados();
         }
         private async void Addjuego(object sender, EventArgs e)

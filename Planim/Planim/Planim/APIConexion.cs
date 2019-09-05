@@ -20,7 +20,7 @@ namespace Planim
 
             using (HttpClient client = new HttpClient())
             {
-                strBaseAdressURL = "http://10.152.2.31:59449/";
+                strBaseAdressURL = "http://10.152.2.25:59449/";
                 client.BaseAddress = new Uri(strBaseAdressURL);
 
                 // Add an Accept header for JSON format.
@@ -46,7 +46,7 @@ namespace Planim
 
             using (HttpClient client = new HttpClient())
             {
-                strBaseAdressURL = "http://10.152.2.31:59449/";
+                strBaseAdressURL = "http://10.152.2.25:59449/";
                 client.BaseAddress = new Uri(strBaseAdressURL);
 
                 // Add an Accept header for JSON format.
@@ -91,6 +91,41 @@ namespace Planim
 
             return returnEntity;
         }
+       
+        //Cargar Juego
+        public ClaseJuego InsertJuego(ClaseJuego newEntity)
+        {
+            ClaseJuego returnEntity = null;
+            string strBaseAdressURL;
+            ByteArrayContent byteContent;
+            HttpResponseMessage response;
+
+            using (HttpClient client = new HttpClient())
+            {
+                strBaseAdressURL = "http://10.152.2.25:59449/";
+                client.BaseAddress = new Uri(strBaseAdressURL);
+
+                // Add an Accept header for JSON format.
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+                // Serializo el Objeto a enviar.
+                byteContent = ObjectToByteArrayContent(newEntity);
+                byteContent.Headers.ContentType = new MediaTypeHeaderValue("application/json");
+
+
+                response = client.PostAsync("api/Juegos", byteContent).Result;
+                if (response.IsSuccessStatusCode)
+                {
+                    returnEntity = response.Content.ReadAsAsync<ClaseJuego>().Result;
+                }
+                else
+                {
+                    returnEntity = new ClaseJuego();
+                }
+            }
+
+            return returnEntity;
+        }
 
         //Convertir a objeto a Json
         private static ByteArrayContent ObjectToByteArrayContent(object currentObject) {
@@ -106,6 +141,7 @@ namespace Planim
 
             return returnByteArrayContent;
         }
+      
         //Traer Madrijim
       /*  public List<MadrijJson> GetMadrijim()
         {
