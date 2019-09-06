@@ -18,12 +18,21 @@ namespace Planim
 
             public Upload(){ InitializeComponent(); }
 
-            public Upload(List<ClaseJuego> Juegito)
+            public Upload(int Idjuego)
         { 
             InitializeComponent();
-            eljue=Juegito;
+            BusquedaxID(Idjuego);
             JuegosSeleccionados();
         }
+
+        private void BusquedaxID(int Idjuego)
+        {
+            ClaseJuego objetoJuego = new ClaseJuego();
+            APIConexion conexion = new APIConexion(); 
+            objetoJuego = conexion.GetJuegosxID(Idjuego);
+            eljue.Add(objetoJuego);
+        }
+
         private async void Addjuego(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new Juego());

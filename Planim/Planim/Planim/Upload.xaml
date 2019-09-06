@@ -15,9 +15,13 @@
                    Keyboard="Numeric" 
                    HorizontalOptions="Start"
                    />
-            <ListView x:Name="ListaJuegos"
-                    SelectedItem="JuegoSeleccion">
-                <ListView.ItemsSource/>
+            <ListView x:Name="ListaJuegos">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Nombre}"
+                                  TextColor="Black"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
             </ListView>
             <Button 
                     Text="Agregar Juego"

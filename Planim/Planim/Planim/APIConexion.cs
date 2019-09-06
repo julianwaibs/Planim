@@ -20,7 +20,7 @@ namespace Planim
 
             using (HttpClient client = new HttpClient())
             {
-                strBaseAdressURL = "http://10.152.2.25:59449/";
+                strBaseAdressURL = "http://10.152.2.31:59449/";
                 client.BaseAddress = new Uri(strBaseAdressURL);
 
                 // Add an Accept header for JSON format.
@@ -46,7 +46,7 @@ namespace Planim
 
             using (HttpClient client = new HttpClient())
             {
-                strBaseAdressURL = "http://10.152.2.25:59449/";
+                strBaseAdressURL = "http://10.152.2.31:59449/";
                 client.BaseAddress = new Uri(strBaseAdressURL);
 
                 // Add an Accept header for JSON format.
@@ -55,12 +55,37 @@ namespace Planim
                 response = client.GetAsync("api/Juegos").Result;
                 if (response.IsSuccessStatusCode)
                 {
-                    returnList = response.Content.ReadAsAsync<List<ClaseJuego>>().Result;
+                    returnList =response.Content.ReadAsAsync<List<ClaseJuego>>().Result;
                 }
                 //client.Dispose();
             }
 
             return returnList;
+        }
+
+        public ClaseJuego GetJuegosxID(int id)
+        {
+            ClaseJuego objetoJuego = new ClaseJuego(); 
+            string strBaseAdressURL;
+            HttpResponseMessage response;
+
+            using (HttpClient client = new HttpClient())
+            {
+                strBaseAdressURL = "http://10.152.2.31:59449/";
+                client.BaseAddress = new Uri(strBaseAdressURL);
+
+                // Add an Accept header for JSON format.
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+                response = client.GetAsync("api/Juegos/getbyid/"+id).Result;
+                if (response.IsSuccessStatusCode)
+                {
+                    objetoJuego =response.Content.ReadAsAsync<ClaseJuego>().Result;
+                }
+                //client.Dispose();
+            }
+
+            return objetoJuego;
         }
         //Cargar Madrijim
         public Madrijim InsertMadrij(Madrijim newEntity) {
@@ -70,7 +95,7 @@ namespace Planim
             HttpResponseMessage response;
 
             using (HttpClient client = new HttpClient()) {
-                strBaseAdressURL    = "http://10.152.2.25:59449/";
+                strBaseAdressURL    = "http://10.152.2.31:59449/";
                 client.BaseAddress  = new Uri(strBaseAdressURL);
                 
                 // Add an Accept header for JSON format.
@@ -93,16 +118,16 @@ namespace Planim
         }
        
         //Cargar Juego
-        public ClaseJuego InsertJuego(ClaseJuego newEntity)
+        public NuevoJuego InsertJuego(NuevoJuego newEntity)
         {
-            ClaseJuego returnEntity = null;
+            NuevoJuego returnEntity = null;
             string strBaseAdressURL;
             ByteArrayContent byteContent;
             HttpResponseMessage response;
 
             using (HttpClient client = new HttpClient())
             {
-                strBaseAdressURL = "http://10.152.2.25:59449/";
+                strBaseAdressURL = "http://10.152.2.31:59449/";
                 client.BaseAddress = new Uri(strBaseAdressURL);
 
                 // Add an Accept header for JSON format.
@@ -116,11 +141,11 @@ namespace Planim
                 response = client.PostAsync("api/Juegos", byteContent).Result;
                 if (response.IsSuccessStatusCode)
                 {
-                    returnEntity = response.Content.ReadAsAsync<ClaseJuego>().Result;
+                    returnEntity = response.Content.ReadAsAsync<NuevoJuego>().Result;
                 }
                 else
                 {
-                    returnEntity = new ClaseJuego();
+                    returnEntity = new NuevoJuego();
                 }
             }
 
@@ -151,7 +176,7 @@ namespace Planim
 
             using (HttpClient client = new HttpClient())
             {
-                strBaseAdressURL = "http://10.152.2.25:59449/";
+                strBaseAdressURL = "http://10.152.2.31:59449/";
                 client.BaseAddress = new Uri(strBaseAdressURL);
 
                 // Add an Accept header for JSON format.

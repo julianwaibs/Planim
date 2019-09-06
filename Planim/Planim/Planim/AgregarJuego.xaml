@@ -4,14 +4,13 @@
              x:Class="Planim.AgregarJuego">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Agregar Juego"
-                VerticalOptions="Start" 
-                HorizontalOptions="Center" 
-                   />
+            <Label Text="Agregar Juego" VerticalOptions="Start" HorizontalOptions="Center" x:Name="TituJuego"/>
             <Entry  Placeholder="Nombre del juego" x:Name="Nombrejuego"/>
-            <Entry  Placeholder="Explicacion del juego" HeightRequest="50"/>
-            <Button Text="Crear juego nuevo"
-                    Clicked="Juegonuevo"/>
+            <Entry  Placeholder="Explicacion del juego" HeightRequest="50" x:Name="Explicacion"/>
+            <Picker Title="Ambito" x:Name="Ambito" />
+            <Entry  Placeholder="Cantidad de chicxs" Keyboard="Numeric" x:Name="Cant"/>
+            <Entry  Placeholder="Edad Recomenda" Keyboard="Numeric" x:Name="Edad"/>
+            <Button Text="Crear juego nuevo" Clicked="Juegonuevo"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

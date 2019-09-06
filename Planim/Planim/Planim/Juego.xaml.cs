@@ -13,7 +13,8 @@ namespace Planim
 	public partial class Juego : ContentPage
 	{
         List<ClaseJuego> JuegoSele = new List<ClaseJuego>();
-		public Juego ()
+        int id;
+        public Juego ()
 		{
 			InitializeComponent ();
             CargarJuegos();
@@ -35,11 +36,11 @@ namespace Planim
        public void JuegoSeleccion(object sender, SelectedItemChangedEventArgs e)
         {
             var clase= e.SelectedItem as ClaseJuego;
-         
+            id = Convert.ToInt32(clase.IdJuego);
         }
         private void MiJuego(object sender, EventArgs args)
         {    
-            Navigation.PushAsync(new Upload(JuegoSele));
+            Navigation.PushAsync(new Upload(id));
         }
 
     }

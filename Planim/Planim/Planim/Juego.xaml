@@ -11,7 +11,8 @@
              ItemSelected="JuegoSeleccion">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <TextCell Text="{Binding Nombre}"/>
+                        <TextCell Text="{Binding Nombre}"
+                                  TextColor="Black"/>
                     </DataTemplate>
                 </ListView.ItemTemplate>   
             </ListView>

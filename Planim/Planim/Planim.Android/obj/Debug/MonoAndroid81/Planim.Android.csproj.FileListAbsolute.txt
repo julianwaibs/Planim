@@ -106,6 +106,8 @@ C:\Users\43572072\Desktop\Planim\Planim\Planim\Planim.Android\obj\Debug\MonoAndr
 C:\Users\43572072\Desktop\Planim\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\android\assets\Xamarin.Forms.Platform.Android.pdb
 C:\Users\43572072\Desktop\Planim\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\android\assets\Xamarin.Forms.Xaml.pdb
 C:\Users\43572072\Desktop\Planim\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\res\drawable\menu.png
+C:\Users\43572072\Desktop\Planim\Planim\Planim\Planim\bin\Debug\netstandard2.0\Planim.dll
 C:\Users\43572072\Desktop\Planim\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\linksrc\Planim.Android.pdb
+C:\Users\43572072\Desktop\Planim\Planim\Planim\Planim.Android\bin\Debug\Planim.dll.mdb
 C:\Users\43572072\Desktop\Planim\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\linksrc\Planim.dll.mdb
 C:\Users\43572072\Desktop\Planim\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\linksrc\Rg.Plugins.Popup.Droid.dll.mdb
