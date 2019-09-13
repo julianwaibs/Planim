@@ -38,6 +38,14 @@ namespace Planim
             var clase= e.SelectedItem as ClaseJuego;
             id = Convert.ToInt32(clase.IdJuego);
         }
+        public void JuegoTap(object sender, ItemTappedEventArgs e)
+        {
+            var clase =  e.Item as ClaseJuego;
+            int edad = Convert.ToInt32(clase.EdadRecomendada);
+            int cant = Convert.ToInt32(clase.CantNiñosRecom);
+            string expli = clase.Explicacion;
+            Navigation.PushAsync(new InfoJuego(clase.Nombre,expli,cant,edad));
+        }
         private void MiJuego(object sender, EventArgs args)
         {    
             Navigation.PushAsync(new Upload(id));

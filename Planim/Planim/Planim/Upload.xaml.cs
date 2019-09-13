@@ -38,9 +38,18 @@ namespace Planim
             await Navigation.PushAsync(new Juego());
         }
         List<string> misjuegos = new List<string>();
+
         public void JuegosSeleccionados()
         {
             ListaJuegos.ItemsSource = eljue;
+        }
+        public void JuegoTap(object sender, ItemTappedEventArgs e)
+        {
+            var clase = e.Item as ClaseJuego;
+            int edad = Convert.ToInt32(clase.EdadRecomendada);
+            int cant = Convert.ToInt32(clase.CantNiñosRecom);
+            string expli = clase.Explicacion;
+            Navigation.PushAsync(new InfoJuego(clase.Nombre, expli, cant, edad));
         }
     }
 }

@@ -8,7 +8,8 @@
                 VerticalOptions="Start" 
                 HorizontalOptions="Center" />
             <ListView x:Name="ListaJuegos"
-             ItemSelected="JuegoSeleccion">
+             ItemSelected="JuegoSeleccion"
+                      ItemTapped="JuegoTap">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <TextCell Text="{Binding Nombre}"
