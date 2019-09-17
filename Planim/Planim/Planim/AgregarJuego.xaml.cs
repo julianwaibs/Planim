@@ -16,7 +16,6 @@ namespace Planim
         string ExpliJuego;
         int iAmbi;
         string sAmbi;
-        string Ambit;
         int CantidadChi;
         int EdadReco;
 

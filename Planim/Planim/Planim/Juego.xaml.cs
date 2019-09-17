@@ -47,8 +47,10 @@ namespace Planim
             Navigation.PushAsync(new InfoJuego(clase.Nombre,expli,cant,edad));
         }
         private void MiJuego(object sender, EventArgs args)
-        {    
-            Navigation.PushAsync(new Upload(id));
+        {
+            Upload upload=new Upload(id);
+            Navigation.RemovePage(this);
+                
         }
 
     }

@@ -81,7 +81,7 @@
           "lib/Xamarin.IOS/Rg.Plugins.Popup.dll": {}
         }
       },
-      "Xamarin.Forms/4.2.0.709249": {
+      "Xamarin.Forms/4.2.0.778463": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -212,7 +212,7 @@
           "Microsoft.Net.Http": "2.2.29",
           "Newtonsoft.Json": "12.0.2",
           "Rg.Plugins.Popup": "1.1.5.188",
-          "Xamarin.Forms": "4.2.0.709249"
+          "Xamarin.Forms": "4.2.0.778463"
         },
         "compile": {
           "bin/placeholder/Planim.dll": {}
@@ -302,7 +302,7 @@
           "lib/Xamarin.IOS/Rg.Plugins.Popup.dll": {}
         }
       },
-      "Xamarin.Forms/4.2.0.709249": {
+      "Xamarin.Forms/4.2.0.778463": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -433,7 +433,7 @@
           "Microsoft.Net.Http": "2.2.29",
           "Newtonsoft.Json": "12.0.2",
           "Rg.Plugins.Popup": "1.1.5.188",
-          "Xamarin.Forms": "4.2.0.709249"
+          "Xamarin.Forms": "4.2.0.778463"
         },
         "compile": {
           "bin/placeholder/Planim.dll": {}
@@ -523,7 +523,7 @@
           "lib/Xamarin.IOS/Rg.Plugins.Popup.dll": {}
         }
       },
-      "Xamarin.Forms/4.2.0.709249": {
+      "Xamarin.Forms/4.2.0.778463": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -654,7 +654,7 @@
           "Microsoft.Net.Http": "2.2.29",
           "Newtonsoft.Json": "12.0.2",
           "Rg.Plugins.Popup": "1.1.5.188",
-          "Xamarin.Forms": "4.2.0.709249"
+          "Xamarin.Forms": "4.2.0.778463"
         },
         "compile": {
           "bin/placeholder/Planim.dll": {}
@@ -744,7 +744,7 @@
           "lib/Xamarin.IOS/Rg.Plugins.Popup.dll": {}
         }
       },
-      "Xamarin.Forms/4.2.0.709249": {
+      "Xamarin.Forms/4.2.0.778463": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -875,7 +875,7 @@
           "Microsoft.Net.Http": "2.2.29",
           "Newtonsoft.Json": "12.0.2",
           "Rg.Plugins.Popup": "1.1.5.188",
-          "Xamarin.Forms": "4.2.0.709249"
+          "Xamarin.Forms": "4.2.0.778463"
         },
         "compile": {
           "bin/placeholder/Planim.dll": {}
@@ -1154,10 +1154,10 @@
         "rg.plugins.popup.nuspec"
       ]
     },
-    "Xamarin.Forms/4.2.0.709249": {
-      "sha512": "QLi/7HKa1nmm795Fe7Tmv0x51O39Zl6HydBEqGbydDHh48bkbJ8p/bxlc4WCLy2GufldmYijBXm5k6hAtpqa5A==",
+    "Xamarin.Forms/4.2.0.778463": {
+      "sha512": "O8bsTiM9mjJRDE9ovuCBodyPIVVfnNoQizLkHi5kW+jqoZ9qNZ9GJwxB1xKOds/ShkEoMtVPUJakm/CZDnQAmg==",
       "type": "package",
-      "path": "xamarin.forms/4.2.0.709249",
+      "path": "xamarin.forms/4.2.0.778463",
       "files": [
         ".signature.p7s",
         "build/MonoAndroid10/proguard.cfg",
@@ -1395,7 +1395,7 @@
         "lib/uap10.0/Xamarin.Forms.Xaml.dll",
         "lib/uap10.0/Xamarin.Forms.Xaml.pdb",
         "lib/uap10.0/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.4.2.0.709249.nupkg.sha512",
+        "xamarin.forms.4.2.0.778463.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     },
@@ -1411,7 +1411,7 @@
       "Newtonsoft.Json >= 12.0.2",
       "Planim >= 1.0.0",
       "Rg.Plugins.Popup >= 1.1.5.188",
-      "Xamarin.Forms >= 4.2.0.709249"
+      "Xamarin.Forms >= 4.2.0.778463"
     ]
   },
   "packageFolders": {
@@ -1465,7 +1465,7 @@
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[4.2.0.709249, )"
+            "version": "[4.2.0.778463, )"
           }
         }
       }
