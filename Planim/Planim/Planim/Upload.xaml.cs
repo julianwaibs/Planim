@@ -15,33 +15,72 @@ namespace Planim
     public partial class Upload : ContentPage
     {
         List<ClaseJuego> eljue=new List<ClaseJuego>();
-
-            public Upload(){ InitializeComponent(); }
-
-            public Upload(int Idjuego)
+        string NombreJuego;
+        int CantidadChi;
+        public Upload()
+        {
+            InitializeComponent();
+            Application.Current.Properties["Juegos"] = null;
+        }
+            public Upload(bool a)
         { 
             InitializeComponent();
-            BusquedaxID(Idjuego);
+            BusquedaxID();
             JuegosSeleccionados();
         }
 
-        private void BusquedaxID(int Idjuego)
+        private void BusquedaxID()
         {
+            List<int> listaid = new List<int>();
+            listaid=(List<int>) Application.Current.Properties["Juegos"];
             ClaseJuego objetoJuego = new ClaseJuego();
             APIConexion conexion = new APIConexion(); 
-            objetoJuego = conexion.GetJuegosxID(Idjuego);
-            eljue.Add(objetoJuego);
+            eljue = conexion.GetJuegosxID(listaid);
+            
         }
 
         private async void Addjuego(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new Juego());
         }
-        List<string> misjuegos = new List<string>();
+        private async void AddActividad(object sender, EventArgs e)
+        {
+            bool valido = Validar();
+            if (valido)
+            {
+                CargarActividad();
+                await Navigation.PushAsync(new Principal());
+            }
+        }
 
+        private void CargarActividad()
+        {
+            NuevaActividad nuevaActividad = new NuevaActividad(0, 0,/*agregar parametros*/);
+        }
+
+        private bool Validar()
+        {
+            if (Nombreact.Text == null)
+            {
+                DisplayAlert("Alert", "Ingrese Nombre", "Reintentar");
+                return false;
+            }
+            else { NombreJuego = Nombreact.Text; }
+            if (cantchicos.Text == null)
+            {
+                DisplayAlert("Alert", "Ingrese Cantidad", "Reintentar");
+                return false;
+            }
+            else { CantidadChi = Convert.ToInt32(cantchicos.Text); }
+            return true;
+        }
+
+        List<string> misjuegos = new List<string>();
         public void JuegosSeleccionados()
         {
-            ListaJuegos.ItemsSource = eljue;
+         
+          ListaJuegos.ItemsSource = eljue;
+            
         }
         public void JuegoTap(object sender, ItemTappedEventArgs e)
         {
@@ -49,7 +88,7 @@ namespace Planim
             int edad = Convert.ToInt32(clase.EdadRecomendada);
             int cant = Convert.ToInt32(clase.CantNiñosRecom);
             string expli = clase.Explicacion;
-            Navigation.PushAsync(new InfoJuego(clase.Nombre, expli, cant, edad));
+            Navigation.PushPopupAsync (new PopUpload(clase.Nombre, expli, cant, edad));
         }
     }
 }

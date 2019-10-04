@@ -4,18 +4,23 @@
                 xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
              x:Class="Planim.PopUpload">
     <StackLayout Margin="18"
-                 Padding="36"
+                 Padding="40"
                  HorizontalOptions="Center"
                  VerticalOptions="Center"
                  BackgroundColor="White" 
                  HeightRequest="100"
                  WidthRequest="300">
-        <Label Text="Agregue el juego" HorizontalOptions="Center"
+        <Label Text="Informacion del juego" HorizontalOptions="Center"
                  VerticalOptions="Start"/>
-        <Entry  Placeholder="Nombre del juego"/>
-        <Entry  Placeholder="Explicacion del juego" HeightRequest="50"/>
-        <Picker Title="Tiempo del juego"  />
-        
+        <Label x:Name="nombre"                                  
+            TextColor="Black"/>
+        <Label x:Name="explicacion" 
+            TextColor="Black"/>
+        <Label x:Name="edad"
+            TextColor="Black"/>
+        <Label x:Name="cant"
+            TextColor="Black"/>
+
 
     </StackLayout>
 </pages:PopupPage>

@@ -13,9 +13,13 @@ namespace Planim
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class PopUpload : PopupPage
 	{
-		public PopUpload ()
+		public PopUpload (string Nombre,string Explicacion,int Cant, int Edad)
 		{
 			InitializeComponent ();
-		}
+            nombre.Text = Nombre;
+            explicacion.Text = Explicacion;
+            edad.Text = "La edad recomendada de este juego: " + Edad;
+            cant.Text = "La cantidad de chicxs recomendados: " + Cant;
+        }
 	}
 }

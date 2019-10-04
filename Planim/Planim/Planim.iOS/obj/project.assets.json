@@ -67,7 +67,7 @@
           "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {}
         }
       },
-      "Rg.Plugins.Popup/1.1.5.188": {
+      "Rg.Plugins.Popup/1.2.0.223": {
         "type": "package",
         "dependencies": {
           "Xamarin.Forms": "2.5.0.121934"
@@ -81,7 +81,7 @@
           "lib/Xamarin.IOS/Rg.Plugins.Popup.dll": {}
         }
       },
-      "Xamarin.Forms/4.2.0.778463": {
+      "Xamarin.Forms/4.2.0.848062": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -211,8 +211,8 @@
           "Microsoft.AspNet.WebApi.Client": "5.2.7",
           "Microsoft.Net.Http": "2.2.29",
           "Newtonsoft.Json": "12.0.2",
-          "Rg.Plugins.Popup": "1.1.5.188",
-          "Xamarin.Forms": "4.2.0.778463"
+          "Rg.Plugins.Popup": "1.2.0.223",
+          "Xamarin.Forms": "4.2.0.848062"
         },
         "compile": {
           "bin/placeholder/Planim.dll": {}
@@ -288,7 +288,7 @@
           "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {}
         }
       },
-      "Rg.Plugins.Popup/1.1.5.188": {
+      "Rg.Plugins.Popup/1.2.0.223": {
         "type": "package",
         "dependencies": {
           "Xamarin.Forms": "2.5.0.121934"
@@ -302,7 +302,7 @@
           "lib/Xamarin.IOS/Rg.Plugins.Popup.dll": {}
         }
       },
-      "Xamarin.Forms/4.2.0.778463": {
+      "Xamarin.Forms/4.2.0.848062": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -432,8 +432,8 @@
           "Microsoft.AspNet.WebApi.Client": "5.2.7",
           "Microsoft.Net.Http": "2.2.29",
           "Newtonsoft.Json": "12.0.2",
-          "Rg.Plugins.Popup": "1.1.5.188",
-          "Xamarin.Forms": "4.2.0.778463"
+          "Rg.Plugins.Popup": "1.2.0.223",
+          "Xamarin.Forms": "4.2.0.848062"
         },
         "compile": {
           "bin/placeholder/Planim.dll": {}
@@ -509,7 +509,7 @@
           "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {}
         }
       },
-      "Rg.Plugins.Popup/1.1.5.188": {
+      "Rg.Plugins.Popup/1.2.0.223": {
         "type": "package",
         "dependencies": {
           "Xamarin.Forms": "2.5.0.121934"
@@ -523,7 +523,7 @@
           "lib/Xamarin.IOS/Rg.Plugins.Popup.dll": {}
         }
       },
-      "Xamarin.Forms/4.2.0.778463": {
+      "Xamarin.Forms/4.2.0.848062": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -653,8 +653,8 @@
           "Microsoft.AspNet.WebApi.Client": "5.2.7",
           "Microsoft.Net.Http": "2.2.29",
           "Newtonsoft.Json": "12.0.2",
-          "Rg.Plugins.Popup": "1.1.5.188",
-          "Xamarin.Forms": "4.2.0.778463"
+          "Rg.Plugins.Popup": "1.2.0.223",
+          "Xamarin.Forms": "4.2.0.848062"
         },
         "compile": {
           "bin/placeholder/Planim.dll": {}
@@ -730,7 +730,7 @@
           "lib/netstandard1.3/Newtonsoft.Json.Bson.dll": {}
         }
       },
-      "Rg.Plugins.Popup/1.1.5.188": {
+      "Rg.Plugins.Popup/1.2.0.223": {
         "type": "package",
         "dependencies": {
           "Xamarin.Forms": "2.5.0.121934"
@@ -744,7 +744,7 @@
           "lib/Xamarin.IOS/Rg.Plugins.Popup.dll": {}
         }
       },
-      "Xamarin.Forms/4.2.0.778463": {
+      "Xamarin.Forms/4.2.0.848062": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
@@ -874,8 +874,8 @@
           "Microsoft.AspNet.WebApi.Client": "5.2.7",
           "Microsoft.Net.Http": "2.2.29",
           "Newtonsoft.Json": "12.0.2",
-          "Rg.Plugins.Popup": "1.1.5.188",
-          "Xamarin.Forms": "4.2.0.778463"
+          "Rg.Plugins.Popup": "1.2.0.223",
+          "Xamarin.Forms": "4.2.0.848062"
         },
         "compile": {
           "bin/placeholder/Planim.dll": {}
@@ -1125,10 +1125,10 @@
         "newtonsoft.json.bson.nuspec"
       ]
     },
-    "Rg.Plugins.Popup/1.1.5.188": {
-      "sha512": "3z5Q6Bdvhi8J2e5Cj0lEQ3rseZXXYTCFd3FjWjDlRbBnJ2vtNPRui5DE8bwWjA2PiDyK+GNj/bhvy+enEzISBA==",
+    "Rg.Plugins.Popup/1.2.0.223": {
+      "sha512": "2AEafpsnoc4up+8WNBAF8Lzsza+sfoLMn6KwOr/mu4lw0ZSEJ4wOW7QUf5uF1bB4orE5F7cMq/Q5aURJ7PZW3A==",
       "type": "package",
-      "path": "rg.plugins.popup/1.1.5.188",
+      "path": "rg.plugins.popup/1.2.0.223",
       "files": [
         ".signature.p7s",
         "lib/MonoAndroid/Rg.Plugins.Popup.Droid.dll",
@@ -1150,14 +1150,14 @@
         "lib/uap10.0/Rg.Plugins.Popup.dll",
         "lib/uap10.0/Rg.Plugins.Popup.pdb",
         "readme.txt",
-        "rg.plugins.popup.1.1.5.188.nupkg.sha512",
+        "rg.plugins.popup.1.2.0.223.nupkg.sha512",
         "rg.plugins.popup.nuspec"
       ]
     },
-    "Xamarin.Forms/4.2.0.778463": {
-      "sha512": "O8bsTiM9mjJRDE9ovuCBodyPIVVfnNoQizLkHi5kW+jqoZ9qNZ9GJwxB1xKOds/ShkEoMtVPUJakm/CZDnQAmg==",
+    "Xamarin.Forms/4.2.0.848062": {
+      "sha512": "0dqY3lXoGvUxBsU8WUYjKuFsyKnsLfeUHY2f5IjCmG0RlsxMLdLs8+N/VCXgM/onZGwNZe1M9HtPMaRM+T0e7A==",
       "type": "package",
-      "path": "xamarin.forms/4.2.0.778463",
+      "path": "xamarin.forms/4.2.0.848062",
       "files": [
         ".signature.p7s",
         "build/MonoAndroid10/proguard.cfg",
@@ -1395,7 +1395,7 @@
         "lib/uap10.0/Xamarin.Forms.Xaml.dll",
         "lib/uap10.0/Xamarin.Forms.Xaml.pdb",
         "lib/uap10.0/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.4.2.0.778463.nupkg.sha512",
+        "xamarin.forms.4.2.0.848062.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     },
@@ -1410,8 +1410,8 @@
       "Microsoft.Net.Http >= 2.2.29",
       "Newtonsoft.Json >= 12.0.2",
       "Planim >= 1.0.0",
-      "Rg.Plugins.Popup >= 1.1.5.188",
-      "Xamarin.Forms >= 4.2.0.778463"
+      "Rg.Plugins.Popup >= 1.2.0.223",
+      "Xamarin.Forms >= 4.2.0.848062"
     ]
   },
   "packageFolders": {
@@ -1461,11 +1461,11 @@
           },
           "Rg.Plugins.Popup": {
             "target": "Package",
-            "version": "[1.1.5.188, )"
+            "version": "[1.2.0.223, )"
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[4.2.0.778463, )"
+            "version": "[4.2.0.848062, )"
           }
         }
       }

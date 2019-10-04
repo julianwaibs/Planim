@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Planim.Upload">
     <ContentPage.Content>
+        
         <StackLayout>
             <Label Text="Subir Actividad"
                 VerticalOptions="Start" 
@@ -10,28 +11,31 @@
                    />
             <Editor Placeholder="Nombre de la actividad" 
                     HorizontalOptions="Start"
+                    x:Name="Nombreact"
                     />
             <Entry Placeholder="Cantidad de chicos" 
                    Keyboard="Numeric" 
                    HorizontalOptions="Start"
-                   />
+                  x:Name="cantchicos" />
+            
             <ListView x:Name="ListaJuegos" ItemTapped="JuegoTap">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <TextCell Text="{Binding Nombre}"
                                   TextColor="Black"/>
                     </DataTemplate>
-                   
                 </ListView.ItemTemplate>
-                   
             </ListView>
+                    
             <Button 
                     Text="Agregar Juego"
                     HorizontalOptions="Center"
                     AutomationId="Addjuego"
                 Clicked="Addjuego"/>
-            <Button Text="Subir Actividad" VerticalOptions="EndAndExpand"/>
-           
+            <Button Text="Subir Actividad" 
+                    Clicked="AddActividad" 
+                    VerticalOptions="EndAndExpand"/>
+          
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

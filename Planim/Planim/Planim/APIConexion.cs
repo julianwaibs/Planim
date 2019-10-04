@@ -63,12 +63,12 @@ namespace Planim
             return returnList;
         }
 
-        public ClaseJuego GetJuegosxID(int id)
+        public List<ClaseJuego> GetJuegosxID(List<int>id)
         {
-            ClaseJuego objetoJuego = new ClaseJuego(); 
+            List<ClaseJuego> listaJuego = new List<ClaseJuego>(); 
             string strBaseAdressURL;
             HttpResponseMessage response;
-
+            ByteArrayContent byteContent;
             using (HttpClient client = new HttpClient())
             {
                 strBaseAdressURL = "http://10.152.2.31:59449/";
@@ -76,16 +76,17 @@ namespace Planim
 
                 // Add an Accept header for JSON format.
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-
-                response = client.GetAsync("api/Juegos/getbyid/"+id).Result;
+                byteContent = ObjectToByteArrayContent(id);
+                byteContent.Headers.ContentType = new MediaTypeHeaderValue("application/json");
+                response = client.PostAsync("api/Juegos/getbyid",byteContent).Result;
                 if (response.IsSuccessStatusCode)
                 {
-                    objetoJuego =response.Content.ReadAsAsync<ClaseJuego>().Result;
+                    listaJuego = response.Content.ReadAsAsync<List<ClaseJuego>>().Result;
                 }
                 //client.Dispose();
             }
 
-            return objetoJuego;
+            return listaJuego;
         }
         //Cargar Madrijim
         public Madrijim InsertMadrij(Madrijim newEntity) {
