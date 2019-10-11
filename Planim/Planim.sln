@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Planim.Android", "Planim\Pl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Planim.iOS", "Planim\Planim.iOS\Planim.iOS.csproj", "{EFEAB669-92AA-48BA-BE9D-B857072D4CD8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Planim", "Planim\Planim\Planim.csproj", "{7AE9159B-4CE9-4C61-B60E-83B1CB30F411}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Planim", "Planim\Planim\Planim.csproj", "{7AE9159B-4CE9-4C61-B60E-83B1CB30F411}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +20,9 @@ Global
 		Debug|Any CPU = Debug|Any CPU
 		Debug|iPhone = Debug|iPhone
 		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Gorilla|Any CPU = Gorilla|Any CPU
+		Gorilla|iPhone = Gorilla|iPhone
+		Gorilla|iPhoneSimulator = Gorilla|iPhoneSimulator
 		Release|Any CPU = Release|Any CPU
 		Release|iPhone = Release|iPhone
 		Release|iPhoneSimulator = Release|iPhoneSimulator
@@ -52,6 +55,15 @@ Global
 		{FB7DF3F6-7A31-4CCE-897A-6F405F4DF238}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
 		{FB7DF3F6-7A31-4CCE-897A-6F405F4DF238}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
 		{FB7DF3F6-7A31-4CCE-897A-6F405F4DF238}.Debug|iPhoneSimulator.Deploy.0 = Debug|Any CPU
+		{FB7DF3F6-7A31-4CCE-897A-6F405F4DF238}.Gorilla|Any CPU.ActiveCfg = Gorilla|Any CPU
+		{FB7DF3F6-7A31-4CCE-897A-6F405F4DF238}.Gorilla|Any CPU.Build.0 = Gorilla|Any CPU
+		{FB7DF3F6-7A31-4CCE-897A-6F405F4DF238}.Gorilla|Any CPU.Deploy.0 = Gorilla|Any CPU
+		{FB7DF3F6-7A31-4CCE-897A-6F405F4DF238}.Gorilla|iPhone.ActiveCfg = Gorilla|Any CPU
+		{FB7DF3F6-7A31-4CCE-897A-6F405F4DF238}.Gorilla|iPhone.Build.0 = Gorilla|Any CPU
+		{FB7DF3F6-7A31-4CCE-897A-6F405F4DF238}.Gorilla|iPhone.Deploy.0 = Gorilla|Any CPU
+		{FB7DF3F6-7A31-4CCE-897A-6F405F4DF238}.Gorilla|iPhoneSimulator.ActiveCfg = Gorilla|Any CPU
+		{FB7DF3F6-7A31-4CCE-897A-6F405F4DF238}.Gorilla|iPhoneSimulator.Build.0 = Gorilla|Any CPU
+		{FB7DF3F6-7A31-4CCE-897A-6F405F4DF238}.Gorilla|iPhoneSimulator.Deploy.0 = Gorilla|Any CPU
 		{FB7DF3F6-7A31-4CCE-897A-6F405F4DF238}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB7DF3F6-7A31-4CCE-897A-6F405F4DF238}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FB7DF3F6-7A31-4CCE-897A-6F405F4DF238}.Release|Any CPU.Deploy.0 = Release|Any CPU
@@ -88,6 +100,11 @@ Global
 		{EFEAB669-92AA-48BA-BE9D-B857072D4CD8}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
 		{EFEAB669-92AA-48BA-BE9D-B857072D4CD8}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
 		{EFEAB669-92AA-48BA-BE9D-B857072D4CD8}.Debug|iPhoneSimulator.Deploy.0 = Debug|iPhoneSimulator
+		{EFEAB669-92AA-48BA-BE9D-B857072D4CD8}.Gorilla|Any CPU.ActiveCfg = Gorilla|iPhone
+		{EFEAB669-92AA-48BA-BE9D-B857072D4CD8}.Gorilla|iPhone.ActiveCfg = Gorilla|iPhone
+		{EFEAB669-92AA-48BA-BE9D-B857072D4CD8}.Gorilla|iPhone.Build.0 = Gorilla|iPhone
+		{EFEAB669-92AA-48BA-BE9D-B857072D4CD8}.Gorilla|iPhoneSimulator.ActiveCfg = Gorilla|iPhoneSimulator
+		{EFEAB669-92AA-48BA-BE9D-B857072D4CD8}.Gorilla|iPhoneSimulator.Build.0 = Gorilla|iPhoneSimulator
 		{EFEAB669-92AA-48BA-BE9D-B857072D4CD8}.Release|Any CPU.ActiveCfg = Release|iPhone
 		{EFEAB669-92AA-48BA-BE9D-B857072D4CD8}.Release|Any CPU.Build.0 = Release|iPhone
 		{EFEAB669-92AA-48BA-BE9D-B857072D4CD8}.Release|Any CPU.Deploy.0 = Release|iPhone
@@ -124,6 +141,12 @@ Global
 		{7AE9159B-4CE9-4C61-B60E-83B1CB30F411}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
 		{7AE9159B-4CE9-4C61-B60E-83B1CB30F411}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
 		{7AE9159B-4CE9-4C61-B60E-83B1CB30F411}.Debug|iPhoneSimulator.Deploy.0 = Debug|Any CPU
+		{7AE9159B-4CE9-4C61-B60E-83B1CB30F411}.Gorilla|Any CPU.ActiveCfg = Gorilla|Any CPU
+		{7AE9159B-4CE9-4C61-B60E-83B1CB30F411}.Gorilla|Any CPU.Build.0 = Gorilla|Any CPU
+		{7AE9159B-4CE9-4C61-B60E-83B1CB30F411}.Gorilla|iPhone.ActiveCfg = Gorilla|Any CPU
+		{7AE9159B-4CE9-4C61-B60E-83B1CB30F411}.Gorilla|iPhone.Build.0 = Gorilla|Any CPU
+		{7AE9159B-4CE9-4C61-B60E-83B1CB30F411}.Gorilla|iPhoneSimulator.ActiveCfg = Gorilla|Any CPU
+		{7AE9159B-4CE9-4C61-B60E-83B1CB30F411}.Gorilla|iPhoneSimulator.Build.0 = Gorilla|Any CPU
 		{7AE9159B-4CE9-4C61-B60E-83B1CB30F411}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7AE9159B-4CE9-4C61-B60E-83B1CB30F411}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7AE9159B-4CE9-4C61-B60E-83B1CB30F411}.Release|Any CPU.Deploy.0 = Release|Any CPU

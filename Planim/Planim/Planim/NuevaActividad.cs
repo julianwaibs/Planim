@@ -14,6 +14,7 @@ namespace Planim
         private int cantNiñosRecom;
         private int edadRecom;
 
+        public NuevaActividad() { }
         public NuevaActividad(int idActividad, int tiempoTotal, int idPuntaje, string nombre, List<int> listaId, int cantNiñosRecom, int edadRecom)
         {
             _idActividad = idActividad;

@@ -14,6 +14,7 @@ namespace Planim
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Upload : ContentPage
     {
+        List<int> listaid = new List<int>();
         List<ClaseJuego> eljue=new List<ClaseJuego>();
         string NombreJuego;
         int CantidadChi;
@@ -31,7 +32,7 @@ namespace Planim
 
         private void BusquedaxID()
         {
-            List<int> listaid = new List<int>();
+            
             listaid=(List<int>) Application.Current.Properties["Juegos"];
             ClaseJuego objetoJuego = new ClaseJuego();
             APIConexion conexion = new APIConexion(); 
@@ -55,11 +56,14 @@ namespace Planim
 
         private void CargarActividad()
         {
-            NuevaActividad nuevaActividad = new NuevaActividad(0, 0,/*agregar parametros*/);
+            NuevaActividad nuevaActividad = new NuevaActividad(0, 0,0,NombreJuego,listaid, CantidadChi,Promedioedad);
+            APIConexion aPIConexion = new APIConexion();
+            aPIConexion.InsertActividad(nuevaActividad);
         }
-
+        
         private bool Validar()
         {
+            
             if (Nombreact.Text == null)
             {
                 DisplayAlert("Alert", "Ingrese Nombre", "Reintentar");
@@ -72,7 +76,19 @@ namespace Planim
                 return false;
             }
             else { CantidadChi = Convert.ToInt32(cantchicos.Text); }
-            return true;
+            promedio();
+           return true;
+        }
+         int Promedioedad;
+        private void promedio()
+        {
+            int Prom = 0;
+            for (int i = 0; i < eljue.Count; i++)
+            {
+                Prom = Prom + Convert.ToInt32(eljue[i].EdadRecomendada);
+
+            }
+            Promedioedad = Prom / eljue.Count;
         }
 
         List<string> misjuegos = new List<string>();
