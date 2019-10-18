@@ -14,16 +14,23 @@ namespace Planim
 	{
 		public Principal ()
 		{
-			InitializeComponent ();
+            
+            InitializeComponent ();
+            
 		}
         List<string> aa = new List<string>();
+        
         private async void Subir(object sender, EventArgs args)
         {
-            await Navigation.PushAsync(new Upload());
+            await Navigation.PushAsync(new Upload());          
         }
+
         private async void MisActividades(object sender, EventArgs args)
         {
+            
             await Navigation.PushAsync(new Peula());
+            
+            
         }
     }
 }

@@ -66,3 +66,4 @@ C:\Users\43572072\Desktop\Planim\Planim\Planim\Planim\obj\Debug\netstandard2.0\A
 C:\Users\43572072\Desktop\Planim\Planim\Planim\Planim\obj\Debug\netstandard2.0\Juego.xaml.g.cs
 C:\Users\43572072\Desktop\Planim\Planim\Planim\Planim\obj\Debug\netstandard2.0\InfoJuego.xaml.g.cs
 C:\Users\43572072\Desktop\Planim\Planim\Planim\Planim\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\43572072\Desktop\Planim\Planim\Planim\Planim\obj\Debug\netstandard2.0\TabbedPage1.xaml.g.cs

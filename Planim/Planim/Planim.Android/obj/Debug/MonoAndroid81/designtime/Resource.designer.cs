@@ -4404,6 +4404,15 @@ namespace Planim.Droid
 			// aapt resource value: 0x7F090055
 			public const int avd_show_password = 2131296341;
 			
+			// aapt resource value: 0x7F010004
+			public const int baseline_arrow_upward_black_18dp = 2130771972;
+			
+			// aapt resource value: 0x7F010005
+			public const int baseline_calendar_today_black_18dp = 2130771973;
+			
+			// aapt resource value: 0x7F010006
+			public const int baseline_home_black_18dp = 2130771974;
+			
 			// aapt resource value: 0x7F010002
 			public const int bruna = 2130771970;
 			

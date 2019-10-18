@@ -9,8 +9,10 @@ namespace Planim
     {
         public App()
         {
-            InitializeComponent();     
+            InitializeComponent();
+            
             MainPage = new NavigationPage(new Entrada());
+
         }
 
 

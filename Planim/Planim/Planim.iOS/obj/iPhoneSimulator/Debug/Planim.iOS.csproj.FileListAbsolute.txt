@@ -123,3 +123,16 @@ C:\Users\43572072\Desktop\Planim\Planim\Planim\Planim.iOS\obj\iPhoneSimulator\De
 C:\Users\43572072\Desktop\Planim\Planim\Planim\Planim.iOS\obj\iPhoneSimulator\Debug\Planim.iOS.csproj.CopyComplete
 C:\Users\43572072\Desktop\Planim\Planim\Planim\Planim.iOS\obj\iPhoneSimulator\Debug\Planim.iOS.exe
 C:\Users\43572072\Desktop\Planim\Planim\Planim\Planim.iOS\obj\iPhoneSimulator\Debug\Planim.iOS.pdb
+C:\Users\43572072\Desktop\Planim\Planim\Planim\Planim.iOS\bin\iPhoneSimulator\Debug\EngineIoClientDotNet.dll
+C:\Users\43572072\Desktop\Planim\Planim\Planim\Planim.iOS\bin\iPhoneSimulator\Debug\SocketIoClientDotNet.dll
+C:\Users\43572072\Desktop\Planim\Planim\Planim\Planim.iOS\bin\iPhoneSimulator\Debug\SuperSocket.ClientEngine.dll
+C:\Users\43572072\Desktop\Planim\Planim\Planim\Planim.iOS\bin\iPhoneSimulator\Debug\System.Collections.Immutable.dll
+C:\Users\43572072\Desktop\Planim\Planim\Planim\Planim.iOS\bin\iPhoneSimulator\Debug\System.Net.NameResolution.dll
+C:\Users\43572072\Desktop\Planim\Planim\Planim\Planim.iOS\bin\iPhoneSimulator\Debug\System.Net.Requests.dll
+C:\Users\43572072\Desktop\Planim\Planim\Planim\Planim.iOS\bin\iPhoneSimulator\Debug\System.Net.Security.dll
+C:\Users\43572072\Desktop\Planim\Planim\Planim\Planim.iOS\bin\iPhoneSimulator\Debug\System.Security.Cryptography.X509Certificates.dll
+C:\Users\43572072\Desktop\Planim\Planim\Planim\Planim.iOS\bin\iPhoneSimulator\Debug\UXDivers.Gorilla.SDK.dll
+C:\Users\43572072\Desktop\Planim\Planim\Planim\Planim.iOS\bin\iPhoneSimulator\Debug\UXDivers.Gorilla.SDK.iOS.dll
+C:\Users\43572072\Desktop\Planim\Planim\Planim\Planim.iOS\bin\iPhoneSimulator\Debug\WebSocket4Net.dll
+C:\Users\43572072\Desktop\Planim\Planim\Planim\Planim.iOS\bin\iPhoneSimulator\Debug\Xamarin.Essentials.dll
+C:\Users\43572072\Desktop\Planim\Planim\Planim\Planim.iOS\bin\iPhoneSimulator\Debug\Xamarin.Essentials.pdb

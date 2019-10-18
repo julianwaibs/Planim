@@ -26,7 +26,10 @@ namespace Planim
 
         private async void Iniciar(object sender, EventArgs args)
         {
-            await Navigation.PushAsync(new Principal());
+           
+
+            await Navigation.PushAsync(new TabbedPage1());
+
         }
 
     }
