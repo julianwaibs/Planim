@@ -12,25 +12,51 @@ namespace Planim
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class SignIn : ContentPage
 	{
+        String Nombre;
+        String Contra;
 		public SignIn ()
 		{
 			InitializeComponent ();
-            LLenarUsuario();
-		}
-        List<MadrijJson> list = new List<MadrijJson>();
-        private void LLenarUsuario()
-        {
-           /* APIConexion conexion = new APIConexion();
-            list = conexion.GetMadrijim();*/
-        }
-
-        private async void Iniciar(object sender, EventArgs args)
-        {
            
+		}
+       
+        private void LLenarUsuario()
+        {                   
+                APIConexion conexion = new APIConexion();
+                Madrijim madrij = new Madrijim(0,Nombre,null,null,Contra,null,0);
+                MadrijJson madrij1 = new MadrijJson();
+                madrij1 = conexion.GetMadrij(madrij);
+            if (madrij1 == null)
+            {
+                DisplayAlert("Alert", "Ingrese los datos correctamente", "Reintentar");
+            }
+        }
+            private bool Validar()
+            {
 
-            await Navigation.PushAsync(new TabbedPage1());
-
+                if (Usuario.Text == null)
+                {
+                    DisplayAlert("Alert", "Ingrese Usuario", "Reintentar");
+                    return false;
+                }
+                else { Nombre = Usuario.Text; }
+                if (Contraseña.Text == null)
+                {
+                    DisplayAlert("Alert", "Ingrese Contraseña", "Reintentar");
+                    return false;
+                }
+                else { Contra = Contraseña.Text; }
+            return true;
+            }
+            private async void Iniciar(object sender, EventArgs args)
+            {
+            bool valido = Validar();
+            if (valido)
+            {               //Hacer que no entre
+                LLenarUsuario();
+                await Navigation.PushAsync(new TabbedPage1());
+            }          
+            }
         }
 
     }
-}

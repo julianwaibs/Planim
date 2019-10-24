@@ -201,7 +201,37 @@ namespace Planim
 
             return returnByteArrayContent;
         }
-      
+          
+        //Traer Madrij
+           public MadrijJson GetMadrij(Madrijim newEntity)
+        {   
+            MadrijJson madrijJson = new MadrijJson();
+            string strBaseAdressURL;
+            HttpResponseMessage response;
+            ByteArrayContent byteContent;
+            using (HttpClient client = new HttpClient())
+            {
+                strBaseAdressURL = "http://10.152.2.31:59449/";
+                client.BaseAddress = new Uri(strBaseAdressURL);
+
+                // Add an Accept header for JSON format.
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                // Serializo el Objeto a enviar.
+                byteContent = ObjectToByteArrayContent(newEntity);
+                response = client.PostAsync("api/Madrijims/Login", byteContent).Result;
+                byteContent.Headers.ContentType = new MediaTypeHeaderValue("application/json");
+                if (response.IsSuccessStatusCode)
+                { 
+                    madrijJson = response.Content.ReadAsAsync<MadrijJson>().Result;                                                        
+                }
+               //client.Dispose();
+            }
+           return madrijJson;
+        }
+
+
+
+
         //Traer Madrijim
       /*  public List<MadrijJson> GetMadrijim()
         {

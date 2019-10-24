@@ -10,14 +10,7 @@
             <Label Text="Inicio"
              VerticalOptions="Start"
              HorizontalOptions="Center"/>
-            <Button VerticalOptions="Center"
-                    HorizontalOptions="Center"
-                Text="Subir Actividad" 
-                Clicked="Subir"/>
-        <Button VerticalOptions="Center" 
-                HorizontalOptions="Center"
-                Text="Mis actividades" 
-                Clicked="MisActividades"/>
+            
          
         </StackLayout>
      </ContentPage.Content>

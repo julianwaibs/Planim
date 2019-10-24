@@ -20,7 +20,7 @@ namespace Planim
 		}
         List<string> aa = new List<string>();
         
-        private async void Subir(object sender, EventArgs args)
+        /*private async void Subir(object sender, EventArgs args)
         {
             await Navigation.PushAsync(new Upload());          
         }
@@ -31,6 +31,6 @@ namespace Planim
             await Navigation.PushAsync(new Peula());
             
             
-        }
+        }*/
     }
 }

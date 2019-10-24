@@ -22,5 +22,9 @@
             <local:Upload/>
         </x:Arguments>
     </NavigationPage>
-    
+    <NavigationPage Title="Perfil">
+        <x:Arguments>
+            <local:Perfil/>
+        </x:Arguments>
+    </NavigationPage>
 </TabbedPage>
