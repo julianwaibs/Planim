@@ -4,9 +4,7 @@
              x:Class="Planim.Perfil">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label x:Name="Usuario" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

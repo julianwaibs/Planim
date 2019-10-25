@@ -12,9 +12,9 @@
             <local:Principal/>
         </x:Arguments>
     </NavigationPage>
-    <NavigationPage Title="Mis act" IconImageSource="baseline_calendar_today_black_18dp.png" >
+    <NavigationPage Title="Buscar" IconImageSource="baseline_search_black_18dp.png">
         <x:Arguments>
-            <local:Peula/>
+            <local:Search/>
         </x:Arguments>
     </NavigationPage>
     <NavigationPage Title="Subir" IconImageSource="baseline_arrow_upward_black_18dp.png">
@@ -22,7 +22,12 @@
             <local:Upload/>
         </x:Arguments>
     </NavigationPage>
-    <NavigationPage Title="Perfil">
+   <NavigationPage Title="Mis act" IconImageSource="baseline_calendar_today_black_18dp.png" >
+        <x:Arguments>
+            <local:Peula/>
+        </x:Arguments>
+    </NavigationPage> 
+    <NavigationPage Title="Perfil" IconImageSource="baseline_person_black_18dp.png">
         <x:Arguments>
             <local:Perfil/>
         </x:Arguments>

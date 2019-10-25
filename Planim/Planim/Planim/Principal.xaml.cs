@@ -16,10 +16,16 @@ namespace Planim
 		{
             
             InitializeComponent ();
-            
+            TraerActividades();
 		}
-        List<string> aa = new List<string>();
-        
+        List<Actividad> aa = new List<Actividad>();
+        private void TraerActividades()
+        {
+            APIConexion api = new APIConexion();
+            aa = api.GetActividades();
+            ListaActividades.ItemsSource = aa;
+        }
+
         /*private async void Subir(object sender, EventArgs args)
         {
             await Navigation.PushAsync(new Upload());          

@@ -19,21 +19,28 @@ namespace Planim
 			InitializeComponent ();
            
 		}
-       
-        private void LLenarUsuario()
+         MadrijJson madrij1 = new MadrijJson();
+        private bool LLenarUsuario()
         {                   
                 APIConexion conexion = new APIConexion();
                 Madrijim madrij = new Madrijim(0,Nombre,null,null,Contra,null,0);
-                MadrijJson madrij1 = new MadrijJson();
+              
                 madrij1 = conexion.GetMadrij(madrij);
+
             if (madrij1 == null)
             {
                 DisplayAlert("Alert", "Ingrese los datos correctamente", "Reintentar");
+                return false;
             }
+            else
+            {
+                Application.Current.Properties["Madrij"] = madrij1;
+            }
+            return true;
         }
             private bool Validar()
             {
-
+            bool inicio=false;
                 if (Usuario.Text == null)
                 {
                     DisplayAlert("Alert", "Ingrese Usuario", "Reintentar");
@@ -46,16 +53,17 @@ namespace Planim
                     return false;
                 }
                 else { Contra = Contraseña.Text; }
-            return true;
+                inicio=LLenarUsuario();
+
+            return inicio;
             }
             private async void Iniciar(object sender, EventArgs args)
             {
-            bool valido = Validar();
-            if (valido)
-            {               //Hacer que no entre
-                LLenarUsuario();
-                await Navigation.PushAsync(new TabbedPage1());
-            }          
+                bool valido = Validar();
+                if (valido)
+                {                       
+                    await Navigation.PushAsync(new TabbedPage1());
+                }          
             }
         }
 

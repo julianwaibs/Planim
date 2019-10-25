@@ -16,7 +16,8 @@ namespace Planim
         private int tiempo;
       //  private int _idJuegoVariante;
         private int edadRecomendada;
-        private int cantNiñosRecom;
+        private int cantNiñosRecom
+            ;
 
       
         public int idJuego { get => _idJuego; set => _idJuego = value; }

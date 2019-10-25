@@ -50,20 +50,28 @@ namespace Planim
             if (valido)
             {
                 CargarActividad();
-                await Navigation.PushAsync(new Principal());
+                await Navigation.PushAsync(new Upload());
             }
         }
 
         private void CargarActividad()
         {
+            int idMadrij;
+            idMadrij = Idmadrij();
             NuevaActividad nuevaActividad = new NuevaActividad(0, 0,0,NombreJuego,listaid, CantidadChi,Promedioedad);
+            ActividadxMadrij actividadx = new ActividadxMadrij(idMadrij, nuevaActividad);
             APIConexion aPIConexion = new APIConexion();
-            aPIConexion.InsertActividad(nuevaActividad);
+            aPIConexion.InsertActividad(actividadx);
         }
-        
+        private int Idmadrij()
+        {   int IDM;
+            MadrijJson madrij = new MadrijJson();
+            madrij = (MadrijJson)Application.Current.Properties["Madrij"];
+            IDM=Convert.ToInt32(madrij.IdMadrij);
+            return IDM; 
+        }
         private bool Validar()
-        {
-            
+        {           
             if (Nombreact.Text == null)
             {
                 DisplayAlert("Alert", "Ingrese Nombre", "Reintentar");

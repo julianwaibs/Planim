@@ -37,7 +37,6 @@ namespace Planim
             return returnList;
         }
 
-
         public List<ClaseJuego> GetJuegos()
         {
             List<ClaseJuego> returnList = new List<ClaseJuego>();
@@ -62,7 +61,7 @@ namespace Planim
 
             return returnList;
         }
-
+        //Get JuegoxID
         public List<ClaseJuego> GetJuegosxID(List<int>id)
         {
             List<ClaseJuego> listaJuego = new List<ClaseJuego>(); 
@@ -87,6 +86,59 @@ namespace Planim
             }
 
             return listaJuego;
+        }
+
+        //Get Actividades x id madrij
+        public List<Actividad> GetActividadesxIdMadrij(int id)
+        {
+            List<Actividad> listaActividad = new List<Actividad>();
+            string strBaseAdressURL;
+            HttpResponseMessage response;
+            ByteArrayContent byteContent;
+            using (HttpClient client = new HttpClient())
+            {
+                strBaseAdressURL = "http://10.152.2.31:59449/";
+                client.BaseAddress = new Uri(strBaseAdressURL);
+
+                // Add an Accept header for JSON format.
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                byteContent = ObjectToByteArrayContent(id);
+                byteContent.Headers.ContentType = new MediaTypeHeaderValue("application/json");
+                response = client.PostAsync("api/Actividades/getbyid", byteContent).Result;
+                if (response.IsSuccessStatusCode)
+                {
+                    listaActividad = response.Content.ReadAsAsync<List<Actividad>>().Result;
+                }
+                //client.Dispose();
+            }
+
+            return listaActividad;
+        }
+
+        //Get Actividades
+        public List<Actividad> GetActividades()
+        {
+            List<Actividad> returnList = new List<Actividad>();
+            string strBaseAdressURL;
+            HttpResponseMessage response;
+
+            using (HttpClient client = new HttpClient())
+            {
+                strBaseAdressURL = "http://10.152.2.31:59449/";
+                client.BaseAddress = new Uri(strBaseAdressURL);
+
+                // Add an Accept header for JSON format.
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+                response = client.GetAsync("api/Actividades").Result;
+                if (response.IsSuccessStatusCode)
+                {
+                    returnList = response.Content.ReadAsAsync<List<Actividad>>().Result;
+                }
+                //client.Dispose();
+            }
+
+            return returnList;
         }
         //Subir Madrijim
         public Madrijim InsertMadrij(Madrijim newEntity) {
@@ -154,7 +206,7 @@ namespace Planim
         }
 
         //Subir Actividad
-        public NuevaActividad InsertActividad(NuevaActividad newEntity)
+        public NuevaActividad InsertActividad(ActividadxMadrij newEntity)
         {
             NuevaActividad returnEntity = null;
             string strBaseAdressURL;
@@ -187,6 +239,7 @@ namespace Planim
 
             return returnEntity;
         }
+        
         //Convertir a objeto a Json
         private static ByteArrayContent ObjectToByteArrayContent(object currentObject) {
             ByteArrayContent    returnByteArrayContent;
@@ -203,7 +256,7 @@ namespace Planim
         }
           
         //Traer Madrij
-           public MadrijJson GetMadrij(Madrijim newEntity)
+         public MadrijJson GetMadrij(Madrijim newEntity)
         {   
             MadrijJson madrijJson = new MadrijJson();
             string strBaseAdressURL;
@@ -228,9 +281,6 @@ namespace Planim
             }
            return madrijJson;
         }
-
-
-
 
         //Traer Madrijim
       /*  public List<MadrijJson> GetMadrijim()

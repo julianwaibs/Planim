@@ -6,12 +6,18 @@
     
     <ContentPage.Content>
         <StackLayout>
-            <SearchBar Placeholder="Buscar"/>
             <Label Text="Inicio"
              VerticalOptions="Start"
              HorizontalOptions="Center"/>
-            
-         
+            <ListView x:Name="ListaActividades" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Nombre}"
+                                  TextColor="Black"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
         </StackLayout>
      </ContentPage.Content>
 </ContentPage>

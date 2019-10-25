@@ -15,6 +15,13 @@ namespace Planim
 		public Perfil ()
 		{
 			InitializeComponent ();
-		}
-	}
+            LlenarPerfil();
+        }
+
+        private void LlenarPerfil()
+        {
+            MadrijJson madrij = new MadrijJson();
+            Usuario.Text = "Bienvenido " + madrij.Nombre;
+        }
+    }
 }

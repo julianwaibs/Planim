@@ -13,8 +13,12 @@ namespace Planim
         private List<int> ListaId;
         private int cantNiñosRecom;
         private int edadRecom;
-
+       
         public NuevaActividad() { }
+
+      
+        
+
         public NuevaActividad(int idActividad, int tiempoTotal, int idPuntaje, string nombre, List<int> listaId, int cantNiñosRecom, int edadRecom)
         {
             _idActividad = idActividad;
@@ -24,6 +28,7 @@ namespace Planim
             ListaId = listaId;
             this.cantNiñosRecom = cantNiñosRecom;
             this.edadRecom = edadRecom;
+           
         }
 
         public int idActividad { get => _idActividad; set => _idActividad = value; }
@@ -33,5 +38,6 @@ namespace Planim
         public List<int> listaId { get => ListaId; set => ListaId = value; }
         public int CantNiñosRecom { get => cantNiñosRecom; set => cantNiñosRecom = value; }
         public int EdadRecom { get => edadRecom; set => edadRecom = value; }
+
     }
 }

@@ -519,10 +519,11 @@
       ]
     },
     "Newtonsoft.Json.Bson/1.0.1": {
-      "sha512": "5PYT/IqQ+UK31AmZiSS102R6EsTo+LGTSI8bp7WAUqDKaF4wHXD8U9u4WxTI1vc64tYi++8p3dk3WWNqPFgldw==",
+      "sha512": "W5Ke5xei9yS0ljQZuT75VgSp5M43eCPm5hHAelvKyGGU4dV7hYCmtwdsxoADb/exO6pYHeu/Iki43TdYPzfESQ==",
       "type": "package",
       "path": "newtonsoft.json.bson/1.0.1",
       "files": [
+        ".signature.p7s",
         "lib/net45/Newtonsoft.Json.Bson.dll",
         "lib/net45/Newtonsoft.Json.Bson.xml",
         "lib/netstandard1.3/Newtonsoft.Json.Bson.dll",
@@ -561,7 +562,7 @@
       ]
     },
     "System.Numerics.Vectors/4.5.0": {
-      "sha512": "MNcaYxUJvUcoXOa+jgKl/GDw/Mh+wMrxDjW4dre7qrp35LUGTjUBNtZsNjxsWX592ocdyqt1X5hMJB+5OStoYw==",
+      "sha512": "nATsBTD2CKr4AYN6eRszhX4sptImWmBJwB/U6XKCWWfnCcrTBw8XSCm3QA9gjppkHTr8OkXUY21MR91D3QZXsw==",
       "type": "package",
       "path": "system.numerics.vectors/4.5.0",
       "files": [

@@ -204,4 +204,10 @@
   <ItemGroup>
     <BundleResource Include="Resources\baseline_arrow_upward_black_18dp.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\baseline_person_black_18dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\baseline_search_black_18dp.png" />
+  </ItemGroup>
 </Project>
