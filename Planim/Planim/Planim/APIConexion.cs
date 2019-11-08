@@ -104,7 +104,7 @@ namespace Planim
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
                 byteContent = ObjectToByteArrayContent(id);
                 byteContent.Headers.ContentType = new MediaTypeHeaderValue("application/json");
-                response = client.PostAsync("api/Actividades/getbyid", byteContent).Result;
+                response = client.GetAsync("api/actividades/getbyidm?id=" + id.ToString()).Result;
                 if (response.IsSuccessStatusCode)
                 {
                     listaActividad = response.Content.ReadAsAsync<List<Actividad>>().Result;
@@ -206,7 +206,7 @@ namespace Planim
         }
 
         //Subir Actividad
-        public NuevaActividad InsertActividad(ActividadxMadrij newEntity)
+        public NuevaActividad InsertActividad(NuevaActividad newEntity)
         {
             NuevaActividad returnEntity = null;
             string strBaseAdressURL;
@@ -240,6 +240,41 @@ namespace Planim
             return returnEntity;
         }
         
+        //Insertar actividad al madrij
+        public ActividadxMadrij InsertActividadxid(ActividadxMadrij newEntity)
+        {
+            ActividadxMadrij returnEntity = null;
+            string strBaseAdressURL;
+            ByteArrayContent byteContent;
+            HttpResponseMessage response;
+
+            using (HttpClient client = new HttpClient())
+            {
+                strBaseAdressURL = "http://10.152.2.31:59449/";
+                client.BaseAddress = new Uri(strBaseAdressURL);
+
+                // Add an Accept header for JSON format.
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+                // Serializo el Objeto a enviar.
+                byteContent = ObjectToByteArrayContent(newEntity);
+                byteContent.Headers.ContentType = new MediaTypeHeaderValue("application/json");
+
+
+                response = client.PostAsync("api/madrijim/link", byteContent).Result;
+                if (response.IsSuccessStatusCode)
+                {
+                    returnEntity = response.Content.ReadAsAsync<ActividadxMadrij>().Result;
+                }
+                else
+                {
+                    returnEntity = new ActividadxMadrij();
+                }
+            }
+
+            return returnEntity;
+        }
+
         //Convertir a objeto a Json
         private static ByteArrayContent ObjectToByteArrayContent(object currentObject) {
             ByteArrayContent    returnByteArrayContent;

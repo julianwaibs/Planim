@@ -35,8 +35,8 @@
                  />
             <Button
                 Text="Registrarse"
-                Clicked="Registro"
-                />
+                Clicked="Registro"              
+                BackgroundColor="LightBlue"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

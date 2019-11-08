@@ -10,7 +10,7 @@
             <Picker Title="Ambito" x:Name="Ambito" />
             <Entry  Placeholder="Cantidad de chicxs" Keyboard="Numeric" x:Name="Cant"/>
             <Entry  Placeholder="Edad Recomenda" Keyboard="Numeric" x:Name="Edad"/>
-            <Button Text="Crear juego nuevo" Clicked="Juegonuevo"/>
+            <Button Text="Crear juego nuevo" Clicked="Juegonuevo" BackgroundColor="LightBlue"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

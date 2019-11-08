@@ -117,6 +117,7 @@ C:\Users\43572072\Desktop\Planim\Planim\Planim\Planim.Android\obj\Debug\MonoAndr
 C:\Users\43572072\Desktop\Planim\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\res\drawable-hdpi\baseline_calendar_today_black_18dp.png
 C:\Users\43572072\Desktop\Planim\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\res\drawable-hdpi\baseline_person_black_18dp.png
 C:\Users\43572072\Desktop\Planim\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\res\drawable-hdpi\baseline_search_black_18dp.png
+C:\Users\43572072\Desktop\Planim\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\res\drawable-hdpi\logo_transparent.png
 C:\Users\43572072\Desktop\Planim\Planim\Planim\Planim\bin\Debug\netstandard2.0\Planim.dll
 C:\Users\43572072\Desktop\Planim\Planim\Planim\Planim.Android\obj\Debug\MonoAndroid81\linksrc\Planim.Android.pdb
 C:\Users\43572072\Desktop\Planim\Planim\Planim\Planim.Android\bin\Debug\Planim.dll.mdb

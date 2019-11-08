@@ -33,11 +33,9 @@ namespace Planim
         private void BusquedaxID()
         {
             
-            listaid=(List<int>) Application.Current.Properties["Juegos"];
-            ClaseJuego objetoJuego = new ClaseJuego();
+            listaid=(List<int>) Application.Current.Properties["Juegos"];          
             APIConexion conexion = new APIConexion(); 
-            eljue = conexion.GetJuegosxID(listaid);
-            
+            eljue = conexion.GetJuegosxID(listaid);            
         }
 
         private async void Addjuego(object sender, EventArgs e)
@@ -58,10 +56,9 @@ namespace Planim
         {
             int idMadrij;
             idMadrij = Idmadrij();
-            NuevaActividad nuevaActividad = new NuevaActividad(0, 0,0,NombreJuego,listaid, CantidadChi,Promedioedad);
-            ActividadxMadrij actividadx = new ActividadxMadrij(idMadrij, nuevaActividad);
+            NuevaActividad nuevaActividad = new NuevaActividad(0, 0,0,NombreJuego,listaid, CantidadChi,Promedioedad, idMadrij);          
             APIConexion aPIConexion = new APIConexion();
-            aPIConexion.InsertActividad(actividadx);
+            aPIConexion.InsertActividad(nuevaActividad);
         }
         private int Idmadrij()
         {   int IDM;

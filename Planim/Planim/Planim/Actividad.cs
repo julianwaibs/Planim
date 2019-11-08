@@ -40,5 +40,8 @@ namespace Planim
 
         [JsonProperty("Cierre")]
         public long? Cierre { get; set; }
+
+        [JsonProperty("Juegos")]
+        public List<int> idJuegos { get; set; }
     }
 }

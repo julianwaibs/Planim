@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Planim.InfoActividad">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Informacion de la actividad" />
+            <Label x:Name="nombre"                                  
+            TextColor="Black"/>
+            <Label x:Name="explicacion" 
+            TextColor="Black"/>
+            <Label x:Name="edad"
+            TextColor="Black"/>
+            <Label x:Name="cant"
+            TextColor="Black"/>
+            <ListView x:Name="ListaJuegos"            
+                      ItemTapped="JuegoTap">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Nombre}"
+                                  TextColor="Black"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

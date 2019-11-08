@@ -12,7 +12,9 @@ namespace Planim
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Principal : ContentPage
 	{
-		public Principal ()
+        int idAct=0;
+        APIConexion api = new APIConexion();
+        public Principal ()
 		{
             
             InitializeComponent ();
@@ -21,22 +23,44 @@ namespace Planim
         List<Actividad> aa = new List<Actividad>();
         private void TraerActividades()
         {
-            APIConexion api = new APIConexion();
             aa = api.GetActividades();
             ListaActividades.ItemsSource = aa;
         }
-
-        /*private async void Subir(object sender, EventArgs args)
+        public void ActividadTap(object sender, ItemTappedEventArgs e)
         {
-            await Navigation.PushAsync(new Upload());          
+            var clase = e.Item as Actividad;
+            int edad = Convert.ToInt32(clase.EdadRecom);
+            int cant = Convert.ToInt32(clase.CantNiñosRecom);
+            int Tiempo = Convert.ToInt32(clase.TiempoTotal);
+            List<int> idJuegos = new List<int>();
+            idJuegos = clase.idJuegos;
+            Navigation.PushAsync(new InfoActividad(clase.Nombre, Tiempo, cant, edad,idJuegos));
+        }
+        public void ActiSelec(object sender, SelectedItemChangedEventArgs e)
+        {
+            var clase = e.SelectedItem as Actividad;
+            idAct = Convert.ToInt32(clase.IdActividad);
         }
 
-        private async void MisActividades(object sender, EventArgs args)
+        private void MiActi(object sender, EventArgs args)
         {
+            if (idAct == 0) {
+                DisplayAlert("Alert", "Seleccione actividad", "Reintentar");                
+            }
+            else { int IDM = Idmadrij();
+            ActividadxMadrij actividadx = new ActividadxMadrij(0,IDM,idAct);
+           api.InsertActividadxid(actividadx);               
+            Navigation.PushAsync(new Peula());
+            }
             
-            await Navigation.PushAsync(new Peula());
-            
-            
-        }*/
+        }
+        private int Idmadrij()
+        {
+            int IDM;
+            MadrijJson madrij = new MadrijJson();
+            madrij = (MadrijJson)Application.Current.Properties["Madrij"];
+            IDM = Convert.ToInt32(madrij.IdMadrij);
+            return IDM;
+        }
     }
 }

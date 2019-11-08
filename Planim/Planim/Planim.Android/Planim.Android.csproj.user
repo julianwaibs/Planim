@@ -4,5 +4,6 @@
     <SelectedDevice>elmuplani</SelectedDevice>
     <DefaultDevice>elmuplani</DefaultDevice>
     <AndroidDesignerPreferredTheme>Theme.DeviceDefault.NoActionBar.Fullscreen</AndroidDesignerPreferredTheme>
+    <AndroidDesignerPreferredDevice>Nexus 4</AndroidDesignerPreferredDevice>
   </PropertyGroup>
 </Project>

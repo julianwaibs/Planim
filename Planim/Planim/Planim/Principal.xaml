@@ -9,7 +9,9 @@
             <Label Text="Inicio"
              VerticalOptions="Start"
              HorizontalOptions="Center"/>
-            <ListView x:Name="ListaActividades" >
+            <ListView x:Name="ListaActividades" 
+                      ItemTapped="ActividadTap"
+                      ItemSelected="ActiSelec">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <TextCell Text="{Binding Nombre}"
@@ -17,6 +19,9 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
+            <Button Text="Agregar a mi Actividad "
+                    Clicked="MiActi"
+                    BackgroundColor="LightBlue"/>
 
         </StackLayout>
      </ContentPage.Content>

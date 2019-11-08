@@ -7,22 +7,28 @@
 
     <StackLayout>
         <!-- Place new controls here -->
-        <Label Text="Bienvenido a Planim!" 
+        <!--    <Label Text="Bienvenido a Planim!" 
            HorizontalOptions="Center"
            VerticalOptions="Center" 
             FontSize="30" 
-               TextColor="SkyBlue"/>
-        <Image Source="bruna.png"
-               WidthRequest="300"
-               HeightRequest="300" />
+               TextColor="Violet"/>-->
+        <Image Source="logo_transparent.png"
+               WidthRequest="400"
+               HeightRequest="400"               
+               VerticalOptions="Center"
+               HorizontalOptions="Center"/>
         <Button  Text="Iniciar sesion"
                 VerticalOptions="End"
                 HorizontalOptions="Center"
-                Clicked="IniciarSesion"/>
-        <Button  Text="Registrarse"
+                Clicked="IniciarSesion"
+                BackgroundColor="LightBlue"
+                 WidthRequest="200"
+                 />
+        <Button Text="Registrarse"
                 VerticalOptions="End"
                 HorizontalOptions="Center"
-                Clicked="Registrarse"/>
+                Clicked="Registrarse"
+                BackgroundColor="LightBlue"/>
     </StackLayout>
 
 </ContentPage>

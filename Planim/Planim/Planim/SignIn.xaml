@@ -9,7 +9,7 @@
                 HorizontalOptions="Center"/>
             <Editor Placeholder="Usuario" x:Name="Usuario"/>
             <Entry Placeholder="Contraseña" IsPassword="True" x:Name="Contraseña"/>
-            <Button Text="Iniciar Sesion" Clicked="Iniciar" > </Button>
+            <Button Text="Iniciar Sesion" Clicked="Iniciar" BackgroundColor="LightBlue"> </Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

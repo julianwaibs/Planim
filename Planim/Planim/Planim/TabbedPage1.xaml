@@ -5,16 +5,12 @@
             x:Class="Planim.TabbedPage1"
             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
             android:TabbedPage.ToolbarPlacement="Bottom"
-            NavigationPage.HasNavigationBar="False">
+            NavigationPage.HasNavigationBar="False"
+            >
     <!--Pages can be added as references or inline-->
     <NavigationPage Title="Home" IconImageSource="baseline_home_black_18dp.png">
         <x:Arguments>
             <local:Principal/>
-        </x:Arguments>
-    </NavigationPage>
-    <NavigationPage Title="Buscar" IconImageSource="baseline_search_black_18dp.png">
-        <x:Arguments>
-            <local:Search/>
         </x:Arguments>
     </NavigationPage>
     <NavigationPage Title="Subir" IconImageSource="baseline_arrow_upward_black_18dp.png">

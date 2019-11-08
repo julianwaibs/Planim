@@ -18,9 +18,11 @@
                 </ListView.ItemTemplate>   
             </ListView>
             <Button Text="Agregar Juego nuevo"
-                    Clicked="AddJuego"/>
+                    Clicked="AddJuego"
+                    BackgroundColor="LightBlue"/>
             <Button Text="Agregar a mi Actividad "
-                    Clicked="MiJuego"/>
+                    Clicked="MiJuego"
+                    BackgroundColor="LightBlue"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -33,5 +33,15 @@ namespace Planim
             IDM = Convert.ToInt32(madrij.IdMadrij);
             return IDM;
         }
+        public void ActividadTap(object sender, ItemTappedEventArgs e)
+        {
+            var clase = e.Item as Actividad;
+            int edad = Convert.ToInt32(clase.EdadRecom);
+            int cant = Convert.ToInt32(clase.CantNiñosRecom);
+            int Tiempo = Convert.ToInt32(clase.TiempoTotal);
+            List<int> idJuegos = new List<int>();
+            idJuegos = clase.idJuegos;
+            Navigation.PushAsync(new InfoActividad(clase.Nombre, Tiempo, cant, edad, idJuegos));
+        }
     }
 }

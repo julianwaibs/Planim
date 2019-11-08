@@ -18,7 +18,7 @@
                    HorizontalOptions="Start"
                   x:Name="cantchicos" />
             
-            <ListView x:Name="ListaJuegos" ItemTapped="JuegoTap">
+            <ListView x:Name="ListaJuegos" ItemTapped="JuegoTap" > 
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <TextCell Text="{Binding Nombre}"
@@ -30,11 +30,13 @@
             <Button 
                     Text="Agregar Juego"
                     HorizontalOptions="Center"
+                    BackgroundColor="LightBlue"
                     AutomationId="Addjuego"
-                Clicked="Addjuego"/>
+                    Clicked="Addjuego"/>
             <Button Text="Subir Actividad" 
                     Clicked="AddActividad" 
-                    VerticalOptions="EndAndExpand"/>
+                    VerticalOptions="EndAndExpand"
+                    BackgroundColor="LightBlue"/>
           
         </StackLayout>
     </ContentPage.Content>

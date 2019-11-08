@@ -5,6 +5,7 @@
     <ContentPage.Content>
         <StackLayout>
             <Label x:Name="Usuario" />
+            <Label x:Name="Institucion" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

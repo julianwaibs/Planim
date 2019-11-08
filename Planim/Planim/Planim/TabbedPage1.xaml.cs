@@ -15,7 +15,9 @@ namespace Planim
         public TabbedPage1 ()
         {
             InitializeComponent();
+           
         }
         
+
     }
 }
