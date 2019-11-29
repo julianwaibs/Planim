@@ -5,13 +5,14 @@
              xmlns:local="clr-namespace:Planim"
              x:Class="Planim.Entrada">
 
-    <StackLayout>
+    <StackLayout >
         <!-- Place new controls here -->
         <!--    <Label Text="Bienvenido a Planim!" 
            HorizontalOptions="Center"
            VerticalOptions="Center" 
             FontSize="30" 
                TextColor="Violet"/>-->
+        
         <Image Source="logo_transparent.png"
                WidthRequest="400"
                HeightRequest="400"               

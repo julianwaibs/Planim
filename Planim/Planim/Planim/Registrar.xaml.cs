@@ -33,7 +33,7 @@ namespace Planim
            bool valido=Validar();
             if (valido) {
                 CargarMadrij();
-            await Navigation.PushAsync(new Principal());
+            await Navigation.PushAsync(new TabbedPage1());
             }
 
         }
@@ -41,7 +41,7 @@ namespace Planim
         {
             Madrijim madrijim = new Madrijim(0, Nombre, Apellido, Mail, Contraseña,instituciones.Instituciones1, id);
             APIConexion aPIConexion = new APIConexion();
-            aPIConexion.InsertMadrij(madrijim);
+            Application.Current.Properties["Madrij"]= aPIConexion.InsertMadrij(madrijim);
         }
         private bool Validar()
         {
@@ -101,10 +101,7 @@ namespace Planim
             return true;
 
         }
-
-
-
-
+        
         public void LlenarInstituciones()
         {
             APIConexion aPI = new APIConexion();

@@ -17,8 +17,12 @@ namespace Planim {
     public partial class TabbedPage1 : global::Xamarin.Forms.TabbedPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::Xamarin.Forms.NavigationPage Misact;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(TabbedPage1));
+            Misact = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.NavigationPage>(this, "Misact");
         }
     }
 }

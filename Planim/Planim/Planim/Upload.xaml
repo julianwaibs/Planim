@@ -5,9 +5,10 @@
     <ContentPage.Content>
         
         <StackLayout>
-            <Label Text="Subir Actividad"
+            <Label Text="Insertar Actividad"
                 VerticalOptions="Start" 
                 HorizontalOptions="CenterAndExpand"
+                   FontSize="Title"
                    />
             <Editor Placeholder="Nombre de la actividad" 
                     HorizontalOptions="Start"

@@ -4,8 +4,8 @@
              x:Class="Planim.Perfil">
     <ContentPage.Content>
         <StackLayout>
-            <Label x:Name="Usuario" />
-            <Label x:Name="Institucion" />
+            <Label x:Name="Usuario" FontSize="Medium"/>
+            <Label x:Name="Institucion" FontSize="Medium" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

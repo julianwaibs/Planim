@@ -35,8 +35,8 @@ namespace Planim
         public int TiempoTotal { get => tiempoTotal; set => tiempoTotal = value; }
         public int idPuntaje { get => _idPuntaje; set => _idPuntaje = value; }
         public string Nombre { get => nombre; set => nombre = value; }
-        public List<int> listaId { get => ListaId; set => ListaId = value; }
-        public int CantNiñosRecom { get => cantNiñosRecom; set => cantNiñosRecom = value; }
+        public List<int> Juegos { get => ListaId; set => ListaId = value; }
+        public int CantNinosRecom { get => cantNiñosRecom; set => cantNiñosRecom = value; }
         public int EdadRecom { get => edadRecom; set => edadRecom = value; }
         public int IdMadrij { get => idMadrij; set => idMadrij = value; }
     }

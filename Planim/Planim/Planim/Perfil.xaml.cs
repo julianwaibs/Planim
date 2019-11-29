@@ -24,13 +24,17 @@ namespace Planim
             MadrijJson madrij = new MadrijJson();            
             madrij =(MadrijJson) Application.Current.Properties["Madrij"];
             Usuario.Text = "Bienvenido " + madrij.Nombre;
-          //  ObtenerInstitucion();
-            Institucion.Text = "Su institucion es "; //ObtenerInstitucion();
-
-        }
-         private void ObtenerInstitucion()
-        {
+            int id = Convert.ToInt32(madrij.IdInstitucion);
+            string institucion= ObtenerInstitucion(id);
+            Institucion.Text = "Institucion "+institucion; //ObtenerInstitucion();
             
+        }
+        private string ObtenerInstitucion(int id)
+        {
+            APIConexion aPI = new APIConexion();
+           Instituciones   = aPI.ObtenerInstitucionxid(id);
+            string Instit = Instituciones.Instituciones1;
+            return Instit;
         }   
     }
 }

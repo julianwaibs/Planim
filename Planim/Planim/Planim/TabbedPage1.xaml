@@ -18,8 +18,8 @@
             <local:Upload/>
         </x:Arguments>
     </NavigationPage>
-   <NavigationPage Title="Mis act" IconImageSource="baseline_calendar_today_black_18dp.png" >
-        <x:Arguments>
+   <NavigationPage Title="Mis act" IconImageSource="baseline_calendar_today_black_18dp.png" x:Name="Misact" >
+        <x:Arguments >
             <local:Peula/>
         </x:Arguments>
     </NavigationPage> 

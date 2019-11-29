@@ -29,12 +29,13 @@ namespace Planim
         public void ActividadTap(object sender, ItemTappedEventArgs e)
         {
             var clase = e.Item as Actividad;
+            int idact = Convert.ToInt32(clase.IdActividad);
             int edad = Convert.ToInt32(clase.EdadRecom);
             int cant = Convert.ToInt32(clase.CantNiñosRecom);
             int Tiempo = Convert.ToInt32(clase.TiempoTotal);
             List<int> idJuegos = new List<int>();
             idJuegos = clase.idJuegos;
-            Navigation.PushAsync(new InfoActividad(clase.Nombre, Tiempo, cant, edad,idJuegos));
+            Navigation.PushAsync(new InfoActividad(idact,clase.Nombre, Tiempo, cant, edad,idJuegos));
         }
         public void ActiSelec(object sender, SelectedItemChangedEventArgs e)
         {
@@ -42,15 +43,20 @@ namespace Planim
             idAct = Convert.ToInt32(clase.IdActividad);
         }
 
+        public void Refrescar(object sender, EventArgs e)
+        {
+            TraerActividades();
+            ListaActividades.IsRefreshing = false;
+        }
         private void MiActi(object sender, EventArgs args)
         {
+            string a="";
             if (idAct == 0) {
                 DisplayAlert("Alert", "Seleccione actividad", "Reintentar");                
             }
             else { int IDM = Idmadrij();
             ActividadxMadrij actividadx = new ActividadxMadrij(0,IDM,idAct);
-           api.InsertActividadxid(actividadx);               
-            Navigation.PushAsync(new Peula());
+            api.InsertActividadxid(actividadx);       
             }
             
         }

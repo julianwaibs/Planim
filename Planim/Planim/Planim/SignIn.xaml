@@ -6,7 +6,8 @@
         <StackLayout>
             <Label Text="Iniciar Sesion!"
                 VerticalOptions="Center" 
-                HorizontalOptions="Center"/>
+                HorizontalOptions="Center"
+                   FontSize="Title"/>
             <Editor Placeholder="Usuario" x:Name="Usuario"/>
             <Entry Placeholder="Contraseña" IsPassword="True" x:Name="Contraseña"/>
             <Button Text="Iniciar Sesion" Clicked="Iniciar" BackgroundColor="LightBlue"> </Button>

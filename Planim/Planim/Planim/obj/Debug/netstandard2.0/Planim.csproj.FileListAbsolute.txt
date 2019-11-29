@@ -70,3 +70,4 @@ C:\Users\43572072\Desktop\Planim\Planim\Planim\Planim\obj\Debug\netstandard2.0\T
 C:\Users\43572072\Desktop\Planim\Planim\Planim\Planim\obj\Debug\netstandard2.0\Perfil.xaml.g.cs
 C:\Users\43572072\Desktop\Planim\Planim\Planim\Planim\obj\Debug\netstandard2.0\Search.xaml.g.cs
 C:\Users\43572072\Desktop\Planim\Planim\Planim\Planim\obj\Debug\netstandard2.0\InfoActividad.xaml.g.cs
+C:\Users\43572072\Desktop\Planim\Planim\Planim\Planim\obj\Debug\netstandard2.0\ModificarAct.xaml.g.cs

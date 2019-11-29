@@ -7,7 +7,7 @@
             <Label Text="Registrarse:"
                 VerticalOptions="Start" 
                 HorizontalOptions="Start"
-                   Font="20"/>
+                   FontSize="Body"/>
             <Editor
              Placeholder="Nombre"
               x:Name="NombreMadrij"  

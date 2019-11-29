@@ -6,7 +6,7 @@
     <ContentPage.Content>
         <StackLayout>
             <Label  Text="Mis Actividades" FontSize="Title"/>
-            <ListView x:Name="ListaActividades" ItemTapped="ActividadTap">
+            <ListView x:Name="ListaActividades" ItemTapped="ActividadTap" IsPullToRefreshEnabled="True" Refreshing="Refrescar">
                     <ListView.ItemTemplate >
                       <DataTemplate >
                         <TextCell Text="{Binding Nombre}" TextColor="Black" />

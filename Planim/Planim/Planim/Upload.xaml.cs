@@ -18,23 +18,24 @@ namespace Planim
         List<ClaseJuego> eljue=new List<ClaseJuego>();
         string NombreJuego;
         int CantidadChi;
+        int Promedioedad;
         public Upload()
         {
             InitializeComponent();
             Application.Current.Properties["Juegos"] = null;
         }
-            public Upload(bool a)
+
+        public Upload(bool A)
         { 
             InitializeComponent();
             BusquedaxID();
             JuegosSeleccionados();
         }
-
+        
         private void BusquedaxID()
         {
-            
-            listaid=(List<int>) Application.Current.Properties["Juegos"];          
-            APIConexion conexion = new APIConexion(); 
+            listaid = (List<int>)Application.Current.Properties["Juegos"];
+            APIConexion conexion = new APIConexion();         
             eljue = conexion.GetJuegosxID(listaid);            
         }
 
@@ -42,12 +43,13 @@ namespace Planim
         {
             await Navigation.PushAsync(new Juego());
         }
+
         private async void AddActividad(object sender, EventArgs e)
         {
             bool valido = Validar();
             if (valido)
             {
-                CargarActividad();
+                CargarActividad(); 
                 await Navigation.PushAsync(new Upload());
             }
         }
@@ -60,6 +62,7 @@ namespace Planim
             APIConexion aPIConexion = new APIConexion();
             aPIConexion.InsertActividad(nuevaActividad);
         }
+
         private int Idmadrij()
         {   int IDM;
             MadrijJson madrij = new MadrijJson();
@@ -67,6 +70,7 @@ namespace Planim
             IDM=Convert.ToInt32(madrij.IdMadrij);
             return IDM; 
         }
+
         private bool Validar()
         {           
             if (Nombreact.Text == null)
@@ -84,7 +88,7 @@ namespace Planim
             promedio();
            return true;
         }
-         int Promedioedad;
+         
         private void promedio()
         {
             int Prom = 0;
@@ -103,6 +107,7 @@ namespace Planim
           ListaJuegos.ItemsSource = eljue;
             
         }
+
         public void JuegoTap(object sender, ItemTappedEventArgs e)
         {
             var clase = e.Item as ClaseJuego;

@@ -2,6 +2,9 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Planim.InfoJuego">
+    <ContentPage.ToolbarItems >
+     <ToolbarItem Text="Borrar" Clicked="Borrar" />
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout>
             <Label x:Name="nombre"                                  

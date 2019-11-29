@@ -20,7 +20,7 @@ namespace Planim
 
             using (HttpClient client = new HttpClient())
             {
-                strBaseAdressURL = "http://10.152.2.31:59449/";
+                strBaseAdressURL = ipconfig();
                 client.BaseAddress = new Uri(strBaseAdressURL);
 
                 // Add an Accept header for JSON format.
@@ -37,6 +37,33 @@ namespace Planim
             return returnList;
         }
 
+        //Get InstitucionxID
+        public Instituciones ObtenerInstitucionxid(int id)
+        {
+            Instituciones institucion = new Instituciones();
+            string strBaseAdressURL;
+            HttpResponseMessage response;
+
+            using (HttpClient client = new HttpClient())
+            {
+                strBaseAdressURL = ipconfig();
+                client.BaseAddress = new Uri(strBaseAdressURL);
+
+                // Add an Accept header for JSON format.
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+                response = client.GetAsync("api/instituciones/"+id.ToString()).Result;
+                if (response.IsSuccessStatusCode)
+                {
+                    institucion =response.Content.ReadAsAsync<Instituciones>().Result;
+                }
+             
+            }
+
+            return institucion;
+        }
+
+        //Get Juegos
         public List<ClaseJuego> GetJuegos()
         {
             List<ClaseJuego> returnList = new List<ClaseJuego>();
@@ -45,7 +72,7 @@ namespace Planim
 
             using (HttpClient client = new HttpClient())
             {
-                strBaseAdressURL = "http://10.152.2.31:59449/";
+                strBaseAdressURL = ipconfig();
                 client.BaseAddress = new Uri(strBaseAdressURL);
 
                 // Add an Accept header for JSON format.
@@ -54,13 +81,13 @@ namespace Planim
                 response = client.GetAsync("api/Juegos").Result;
                 if (response.IsSuccessStatusCode)
                 {
-                    returnList =response.Content.ReadAsAsync<List<ClaseJuego>>().Result;
+                    returnList = response.Content.ReadAsAsync<List<ClaseJuego>>().Result;
                 }
                 //client.Dispose();
             }
-
             return returnList;
         }
+
         //Get JuegoxID
         public List<ClaseJuego> GetJuegosxID(List<int>id)
         {
@@ -70,7 +97,7 @@ namespace Planim
             ByteArrayContent byteContent;
             using (HttpClient client = new HttpClient())
             {
-                strBaseAdressURL = "http://10.152.2.31:59449/";
+                strBaseAdressURL = ipconfig();
                 client.BaseAddress = new Uri(strBaseAdressURL);
 
                 // Add an Accept header for JSON format.
@@ -88,7 +115,35 @@ namespace Planim
             return listaJuego;
         }
 
+        // Get ActividadxID
+        public Actividad GetActividadxid(int id)
+        {
+            Actividad actividad = new Actividad();
+            string strBaseAdressURL;
+            HttpResponseMessage response;
+            ByteArrayContent byteContent;
+            using (HttpClient client = new HttpClient())
+            {
+                strBaseAdressURL = ipconfig();
+                client.BaseAddress = new Uri(strBaseAdressURL);
+
+                // Add an Accept header for JSON format.
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                byteContent = ObjectToByteArrayContent(id);
+                byteContent.Headers.ContentType = new MediaTypeHeaderValue("application/json");
+                response = client.GetAsync("api/actividades/byid?id="+id.ToString()).Result;
+                if (response.IsSuccessStatusCode)
+                {
+                    actividad = response.Content.ReadAsAsync<Actividad>().Result;
+                }
+                //client.Dispose();
+            }
+
+            return actividad;
+        }
         //Get Actividades x id madrij
+
+
         public List<Actividad> GetActividadesxIdMadrij(int id)
         {
             List<Actividad> listaActividad = new List<Actividad>();
@@ -97,7 +152,7 @@ namespace Planim
             ByteArrayContent byteContent;
             using (HttpClient client = new HttpClient())
             {
-                strBaseAdressURL = "http://10.152.2.31:59449/";
+                strBaseAdressURL = ipconfig();
                 client.BaseAddress = new Uri(strBaseAdressURL);
 
                 // Add an Accept header for JSON format.
@@ -124,7 +179,7 @@ namespace Planim
 
             using (HttpClient client = new HttpClient())
             {
-                strBaseAdressURL = "http://10.152.2.31:59449/";
+                strBaseAdressURL = ipconfig();
                 client.BaseAddress = new Uri(strBaseAdressURL);
 
                 // Add an Accept header for JSON format.
@@ -140,15 +195,16 @@ namespace Planim
 
             return returnList;
         }
+
         //Subir Madrijim
-        public Madrijim InsertMadrij(Madrijim newEntity) {
-            Madrijim            returnEntity = null;
+        public MadrijJson InsertMadrij(Madrijim newEntity) {
+            MadrijJson returnEntity = null;
             string              strBaseAdressURL;
             ByteArrayContent    byteContent;
             HttpResponseMessage response;
 
             using (HttpClient client = new HttpClient()) {
-                strBaseAdressURL    = "http://10.152.2.31:59449/";
+                strBaseAdressURL    = ipconfig();
                 client.BaseAddress  = new Uri(strBaseAdressURL);
                 
                 // Add an Accept header for JSON format.
@@ -161,15 +217,81 @@ namespace Planim
 
                 response = client.PostAsync("api/madrijims",byteContent).Result;
                 if (response.IsSuccessStatusCode) {
-                    returnEntity = response.Content.ReadAsAsync<Madrijim>().Result;
+                    returnEntity = response.Content.ReadAsAsync<MadrijJson>().Result;
                 } else {
-                    returnEntity = new Madrijim();
+                    returnEntity = new MadrijJson();
                 }
             }
 
             return returnEntity;
         }
-       
+
+        //Borrar Actividad
+        public NuevaActividad BorrarActividad(int id)
+        {
+            NuevaActividad returnEntity = null;
+            string strBaseAdressURL;
+            ByteArrayContent byteContent;
+            HttpResponseMessage response;
+
+            using (HttpClient client = new HttpClient())
+            {
+                strBaseAdressURL = ipconfig();
+                client.BaseAddress = new Uri(strBaseAdressURL);
+
+                // Add an Accept header for JSON format.
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+                // Serializo el Objeto a enviar.
+                byteContent = ObjectToByteArrayContent(id);
+                byteContent.Headers.ContentType = new MediaTypeHeaderValue("application/json");
+                response = client.GetAsync("api/BActividad?id="+id.ToString()).Result;
+                if (response.IsSuccessStatusCode)
+                {
+                    returnEntity = response.Content.ReadAsAsync<NuevaActividad>().Result;
+                }
+                else
+                {
+                    returnEntity = new NuevaActividad();
+                }
+            }
+
+            return returnEntity;
+        }
+
+        // Borrar Juego
+        public NuevoJuego BorrarJuego(int id)
+        {
+            NuevoJuego returnEntity = null;
+            string strBaseAdressURL;
+            ByteArrayContent byteContent;
+            HttpResponseMessage response;
+
+            using (HttpClient client = new HttpClient())
+            {
+                strBaseAdressURL = ipconfig();
+                client.BaseAddress = new Uri(strBaseAdressURL);
+
+                // Add an Accept header for JSON format.
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+                // Serializo el Objeto a enviar.
+                byteContent = ObjectToByteArrayContent(id);
+                byteContent.Headers.ContentType = new MediaTypeHeaderValue("application/json");
+                response = client.GetAsync("api/BJuegos?id=" + id.ToString()).Result;
+                if (response.IsSuccessStatusCode)
+                {
+                    returnEntity = response.Content.ReadAsAsync<NuevoJuego>().Result;
+                }
+                else
+                {
+                    returnEntity = new NuevoJuego();
+                }
+            }
+
+            return returnEntity;
+        }
+
         //Subir Juego
         public NuevoJuego InsertJuego(NuevoJuego newEntity)
         {
@@ -180,7 +302,7 @@ namespace Planim
 
             using (HttpClient client = new HttpClient())
             {
-                strBaseAdressURL = "http://10.152.2.31:59449/";
+                strBaseAdressURL = ipconfig();
                 client.BaseAddress = new Uri(strBaseAdressURL);
 
                 // Add an Accept header for JSON format.
@@ -215,7 +337,7 @@ namespace Planim
 
             using (HttpClient client = new HttpClient())
             {
-                strBaseAdressURL = "http://10.152.2.31:59449/";
+                strBaseAdressURL = ipconfig();
                 client.BaseAddress = new Uri(strBaseAdressURL);
 
                 // Add an Accept header for JSON format.
@@ -224,8 +346,6 @@ namespace Planim
                 // Serializo el Objeto a enviar.
                 byteContent = ObjectToByteArrayContent(newEntity);
                 byteContent.Headers.ContentType = new MediaTypeHeaderValue("application/json");
-
-
                 response = client.PostAsync("api/actividades", byteContent).Result;
                 if (response.IsSuccessStatusCode)
                 {
@@ -240,6 +360,44 @@ namespace Planim
             return returnEntity;
         }
         
+        //ipconfig
+        public string ipconfig()
+        {
+            string ip = "http://10.152.2.70:59449/";
+            return ip;
+        }
+        //Modificar
+        public NuevaActividad ModificarActividad(NuevaActividad newEntity)
+        {
+            NuevaActividad returnEntity = null;
+            string strBaseAdressURL;
+            ByteArrayContent byteContent;
+            HttpResponseMessage response;
+
+            using (HttpClient client = new HttpClient())
+            {
+                strBaseAdressURL = ipconfig();
+                client.BaseAddress = new Uri(strBaseAdressURL);
+
+                // Add an Accept header for JSON format.
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+                // Serializo el Objeto a enviar.
+                byteContent = ObjectToByteArrayContent(newEntity);
+                byteContent.Headers.ContentType = new MediaTypeHeaderValue("application/json");
+                response = client.PostAsync("api/actividades/MActivi", byteContent).Result;
+                if (response.IsSuccessStatusCode)
+                {
+                    returnEntity = response.Content.ReadAsAsync<NuevaActividad>().Result;
+                }
+                else
+                {
+                    returnEntity = new NuevaActividad();
+                }
+            }
+
+            return returnEntity;
+        }
         //Insertar actividad al madrij
         public ActividadxMadrij InsertActividadxid(ActividadxMadrij newEntity)
         {
@@ -250,7 +408,7 @@ namespace Planim
 
             using (HttpClient client = new HttpClient())
             {
-                strBaseAdressURL = "http://10.152.2.31:59449/";
+                strBaseAdressURL = ipconfig();
                 client.BaseAddress = new Uri(strBaseAdressURL);
 
                 // Add an Accept header for JSON format.
@@ -299,7 +457,7 @@ namespace Planim
             ByteArrayContent byteContent;
             using (HttpClient client = new HttpClient())
             {
-                strBaseAdressURL = "http://10.152.2.31:59449/";
+                strBaseAdressURL = ipconfig();
                 client.BaseAddress = new Uri(strBaseAdressURL);
 
                 // Add an Accept header for JSON format.
@@ -318,30 +476,30 @@ namespace Planim
         }
 
         //Traer Madrijim
-      /*  public List<MadrijJson> GetMadrijim()
-        {
-            List<MadrijJson> returnList = new List<MadrijJson>();
-            string strBaseAdressURL;
-            HttpResponseMessage response;
+        /*  public List<MadrijJson> GetMadrijim()
+          {
+              List<MadrijJson> returnList = new List<MadrijJson>();
+              string strBaseAdressURL;
+              HttpResponseMessage response;
 
-            using (HttpClient client = new HttpClient())
-            {
-                strBaseAdressURL = "http://10.152.2.31:59449/";
-                client.BaseAddress = new Uri(strBaseAdressURL);
+              using (HttpClient client = new HttpClient())
+              {
+                  strBaseAdressURL = ipconfig();
+                  client.BaseAddress = new Uri(strBaseAdressURL);
 
-                // Add an Accept header for JSON format.
-                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                  // Add an Accept header for JSON format.
+                  client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
-                response = client.GetAsync("api/madrijims").Result;
-                if (response.IsSuccessStatusCode)
-                {
-                    returnList = response.Content.ReadAsAsync<List<MadrijJson>>().Result;
-                }
-               // client.Dispose();
-            }
+                  response = client.GetAsync("api/madrijims").Result;
+                  if (response.IsSuccessStatusCode)
+                  {
+                      returnList = response.Content.ReadAsAsync<List<MadrijJson>>().Result;
+                  }
+                 // client.Dispose();
+              }
 
-            return returnList;
-        }*/
+              return returnList;
+          }*/
 
 
     }

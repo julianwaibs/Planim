@@ -3,15 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Planim.Principal"
              >
-    
+   
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Inicio"
              VerticalOptions="Start"
-             HorizontalOptions="Center"/>
+             HorizontalOptions="Center"
+                   FontSize="Body"/>
             <ListView x:Name="ListaActividades" 
                       ItemTapped="ActividadTap"
-                      ItemSelected="ActiSelec">
+                      ItemSelected="ActiSelec"
+                      IsPullToRefreshEnabled="True" Refreshing="Refrescar">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <TextCell Text="{Binding Nombre}"
